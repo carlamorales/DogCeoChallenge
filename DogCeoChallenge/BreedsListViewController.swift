@@ -18,6 +18,7 @@ class BreedsListViewController: UIViewController {
         
         view.addSubview(breedsListTable)
         breedsListTable.pin(to: view)
+        breedsListTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         breedsListTable.dataSource = self
         breedsListTable.delegate = self
@@ -32,7 +33,9 @@ extension BreedsListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = breedsListTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "CONTENIDO TEXTUAL DE LA CELDA"
+        return cell
     }
     
 }
