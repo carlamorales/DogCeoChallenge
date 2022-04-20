@@ -11,6 +11,7 @@
 		0404AEEB2810B39600E03460 /* BreedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404AEEA2810B39600E03460 /* BreedsListViewController.swift */; };
 		0404AEF02810B39700E03460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404AEEF2810B39700E03460 /* Assets.xcassets */; };
 		0404AEF32810B39700E03460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404AEF12810B39700E03460 /* LaunchScreen.storyboard */; };
+		0404AEFB2810BDBF00E03460 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404AEFA2810BDBF00E03460 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0404AEEF2810B39700E03460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0404AEF22810B39700E03460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0404AEF42810B39700E03460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404AEFA2810BDBF00E03460 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				0404AEE62810B39600E03460 /* AppDelegate.swift */,
 				0404AEEA2810B39600E03460 /* BreedsListViewController.swift */,
+				0404AEFA2810BDBF00E03460 /* UIViewExtension.swift */,
 				0404AEEF2810B39700E03460 /* Assets.xcassets */,
 				0404AEF12810B39700E03460 /* LaunchScreen.storyboard */,
 				0404AEF42810B39700E03460 /* Info.plist */,
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0404AEFB2810BDBF00E03460 /* UIViewExtension.swift in Sources */,
 				0404AEEB2810B39600E03460 /* BreedsListViewController.swift in Sources */,
 				0404AEE72810B39600E03460 /* AppDelegate.swift in Sources */,
 			);
