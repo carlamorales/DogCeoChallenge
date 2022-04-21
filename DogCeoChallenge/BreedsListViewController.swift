@@ -54,4 +54,11 @@ extension BreedsListViewController: UITableViewDataSource {
     
 }
 
-extension BreedsListViewController: UITableViewDelegate {}
+extension BreedsListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vcDogsPictures = DogsPicturesViewController()
+        navigationController?.pushViewController(vcDogsPictures, animated: true)
+    }
+    
+}
