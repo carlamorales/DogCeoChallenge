@@ -10,6 +10,7 @@ import UIKit
 class BreedsListViewController: UIViewController {
     
     let breedsListTable = UITableView()
+    var breedsArray: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,18 @@ class BreedsListViewController: UIViewController {
         
         breedsListTable.dataSource = self
         breedsListTable.delegate = self
+        
+        APICall.apiCallInstance.fetchApiData { breeds, error in
+            DispatchQueue.main.async {
+                guard let breeds = breeds else {
+                    print(error?.errorMessage ?? "Error")
+                    return
+                }
+                self.breedsArray = breeds
+                self.breedsListTable.reloadData()
+            }
+        }
+        
     }
 
 }
@@ -29,12 +42,13 @@ class BreedsListViewController: UIViewController {
 extension BreedsListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return breedsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = breedsListTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "CONTENIDO TEXTUAL DE LA CELDA"
+        let cellContent = breedsArray[indexPath.row]
+        cell.textLabel?.text = cellContent
         return cell
     }
     
