@@ -7,6 +7,8 @@
 
 import UIKit
 
+var nsCache = NSCache<NSString, UIImage>()
+
 extension UIImageView {
     
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
@@ -16,6 +18,7 @@ extension UIImageView {
                   let image = UIImage(data: data) else {
                 return
             }
+            nsCache.setObject(image, forKey: url.absoluteString as NSString)
             DispatchQueue.main.async() { [weak self] in
                 self?.image = image
             }

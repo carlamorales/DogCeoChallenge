@@ -11,6 +11,11 @@ class DogsPicturesTableViewCell: UITableViewCell {
     
     let dogImageView = UIImageView()
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        dogImageView.image = UIImage(named: "placeholder")
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         prepareViews()

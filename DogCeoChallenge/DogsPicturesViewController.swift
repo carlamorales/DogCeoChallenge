@@ -46,7 +46,11 @@ extension DogsPicturesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = dogsPicturesTable.dequeueReusableCell(withIdentifier: "cell") as! DogsPicturesTableViewCell
         let cellContent = picturesArray[indexPath.row]
-        cell.dogImageView.downloaded(from: cellContent)
+        if let image = nsCache.object(forKey: cellContent as NSString) {
+            cell.dogImageView.image = image
+        } else {
+            cell.dogImageView.downloaded(from: cellContent)
+        }
         return cell
     }
 }
