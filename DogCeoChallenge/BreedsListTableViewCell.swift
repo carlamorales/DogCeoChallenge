@@ -13,11 +13,20 @@ class BreedsListTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        prepareViews()
+        prepareStyles()
+        prepareConstraints()
+    }
+    
+    func prepareViews() {
         contentView.addSubview(breedLabel)
-        
-        breedLabel.font = UIFont.systemFont(ofSize: 20)
-        
+    }
+    
+    func prepareStyles() {
+        breedLabel.font = UIFont.systemFont(ofSize: 18)
+    }
+    
+    func prepareConstraints() {
         breedLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             breedLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
@@ -28,5 +37,4 @@ class BreedsListTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
