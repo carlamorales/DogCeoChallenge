@@ -58,6 +58,9 @@ extension BreedsListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcDogsPictures = DogsPicturesViewController()
+        let cellContent = breedsArray[indexPath.row]
+        vcDogsPictures.title = cellContent.uppercased()
+        vcDogsPictures.dogBreed = cellContent
         navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     

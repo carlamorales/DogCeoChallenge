@@ -11,6 +11,7 @@ class DogsPicturesViewController: UIViewController {
     
     let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
+    var dogBreed: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,18 @@ class DogsPicturesViewController: UIViewController {
         
         dogsPicturesTable.dataSource = self
         dogsPicturesTable.delegate = self
+        
+        APICall.apiCallInstance.fetchApiPictures(breed: dogBreed) { pictures, error in
+            DispatchQueue.main.async {
+                guard let pictures = pictures else {
+                    print(error?.errorMessage ?? "Error")
+                    return
+                }
+                self.picturesArray = pictures
+                self.dogsPicturesTable.reloadData()
+            }
+        }
+        
     }
     
 }
@@ -28,11 +41,12 @@ class DogsPicturesViewController: UIViewController {
 extension DogsPicturesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return picturesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = dogsPicturesTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
     }
     
 }
