@@ -19,7 +19,7 @@ class BreedsListViewController: UIViewController {
         
         view.addSubview(breedsListTable)
         breedsListTable.pin(to: view)
-        breedsListTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        breedsListTable.register(BreedsListTableViewCell.self, forCellReuseIdentifier: "cell")
         
         breedsListTable.dataSource = self
         breedsListTable.delegate = self
@@ -40,22 +40,19 @@ class BreedsListViewController: UIViewController {
 }
 
 extension BreedsListViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return breedsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = breedsListTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = breedsListTable.dequeueReusableCell(withIdentifier: "cell") as! BreedsListTableViewCell
         let cellContent = breedsArray[indexPath.row]
-        cell.textLabel?.text = cellContent
+        cell.breedLabel.text = cellContent
         return cell
     }
-    
 }
 
 extension BreedsListViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcDogsPictures = DogsPicturesViewController()
         let cellContent = breedsArray[indexPath.row]
@@ -64,4 +61,7 @@ extension BreedsListViewController: UITableViewDelegate {
         navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
 }
