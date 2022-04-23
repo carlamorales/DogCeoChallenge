@@ -14,6 +14,7 @@
 		0404AEFB2810BDBF00E03460 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404AEFA2810BDBF00E03460 /* UIViewExtension.swift */; };
 		040CD88D2810EE5A00B57F12 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD88C2810EE5A00B57F12 /* APICall.swift */; };
 		041FC7C42814597B008AF4DA /* BreedsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */; };
+		041FC7C628146381008AF4DA /* DogsPicturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */; };
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		0404AEFA2810BDBF00E03460 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		040CD88C2810EE5A00B57F12 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListTableViewCell.swift; sourceTree = "<group>"; };
+		041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesTableViewCell.swift; sourceTree = "<group>"; };
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				0404AEEA2810B39600E03460 /* BreedsListViewController.swift */,
 				041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */,
 				047860C4281195D10040E2ED /* DogsPicturesViewController.swift */,
+				041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */,
 				040CD88C2810EE5A00B57F12 /* APICall.swift */,
 				0404AEFA2810BDBF00E03460 /* UIViewExtension.swift */,
 				04CD46B328136715009DEC45 /* UIImageViewExtension.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */,
+				041FC7C628146381008AF4DA /* DogsPicturesTableViewCell.swift in Sources */,
 				0404AEFB2810BDBF00E03460 /* UIViewExtension.swift in Sources */,
 				04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */,
 				0404AEEB2810B39600E03460 /* BreedsListViewController.swift in Sources */,

@@ -18,7 +18,7 @@ class DogsPicturesViewController: UIViewController {
 
         view.addSubview(dogsPicturesTable)
         dogsPicturesTable.pin(to: view)
-        dogsPicturesTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        dogsPicturesTable.register(DogsPicturesTableViewCell.self, forCellReuseIdentifier: "cell")
         
         dogsPicturesTable.dataSource = self
         dogsPicturesTable.delegate = self
@@ -39,16 +39,20 @@ class DogsPicturesViewController: UIViewController {
 }
 
 extension DogsPicturesViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return picturesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = dogsPicturesTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = dogsPicturesTable.dequeueReusableCell(withIdentifier: "cell") as! DogsPicturesTableViewCell
+        let cellContent = picturesArray[indexPath.row]
+        cell.dogImageView.downloaded(from: cellContent)
         return cell
     }
-    
 }
 
-extension DogsPicturesViewController: UITableViewDelegate {}
+extension DogsPicturesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+}
