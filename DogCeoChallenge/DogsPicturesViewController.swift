@@ -15,14 +15,10 @@ class DogsPicturesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        prepareTableView()
+        prepareTableViewDelegates()
 
-        view.addSubview(dogsPicturesTable)
-        dogsPicturesTable.pin(to: view)
-        dogsPicturesTable.register(DogsPicturesTableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        dogsPicturesTable.dataSource = self
-        dogsPicturesTable.delegate = self
-        
         APICall.apiCallInstance.fetchApiPictures(breed: dogBreed) { pictures, error in
             DispatchQueue.main.async {
                 guard let pictures = pictures else {
@@ -34,6 +30,17 @@ class DogsPicturesViewController: UIViewController {
             }
         }
         
+    }
+    
+    func prepareTableView() {
+        view.addSubview(dogsPicturesTable)
+        dogsPicturesTable.pin(to: view)
+        dogsPicturesTable.register(DogsPicturesTableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    func prepareTableViewDelegates() {
+        dogsPicturesTable.dataSource = self
+        dogsPicturesTable.delegate = self
     }
     
 }

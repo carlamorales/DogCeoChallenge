@@ -17,12 +17,8 @@ class BreedsListViewController: UIViewController {
         
         title = "DOG BREEDS"
         
-        view.addSubview(breedsListTable)
-        breedsListTable.pin(to: view)
-        breedsListTable.register(BreedsListTableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        breedsListTable.dataSource = self
-        breedsListTable.delegate = self
+        prepareTableView()
+        prepareTableViewDelegates()
         
         APICall.apiCallInstance.fetchApiData { breeds, error in
             DispatchQueue.main.async {
@@ -36,7 +32,18 @@ class BreedsListViewController: UIViewController {
         }
         
     }
-
+    
+    func prepareTableView() {
+        view.addSubview(breedsListTable)
+        breedsListTable.pin(to: view)
+        breedsListTable.register(BreedsListTableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    func prepareTableViewDelegates() {
+        breedsListTable.dataSource = self
+        breedsListTable.delegate = self
+    }
+    
 }
 
 extension BreedsListViewController: UITableViewDataSource {
