@@ -9,7 +9,7 @@ import UIKit
 
 class DogsPicturesViewController: UIViewController {
     
-    let dogsPicturesTable = UITableView()
+    private let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
     var dogBreed: String = ""
     var restApiCall: ApiRest?
@@ -33,13 +33,13 @@ class DogsPicturesViewController: UIViewController {
         
     }
     
-    func prepareTableView() {
+    private func prepareTableView() {
         view.addSubview(dogsPicturesTable)
         dogsPicturesTable.pin(to: view)
         dogsPicturesTable.register(DogsPicturesTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    func prepareTableViewDelegates() {
+    private func prepareTableViewDelegates() {
         dogsPicturesTable.dataSource = self
         dogsPicturesTable.delegate = self
     }

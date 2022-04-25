@@ -23,15 +23,15 @@ class DogsPicturesTableViewCell: UITableViewCell {
         prepareConstraints()
     }
     
-    func prepareViews() {
+    private func prepareViews() {
         contentView.addSubview(dogImageView)
     }
     
-    func prepareStyles() {
+    private func prepareStyles() {
         dogImageView.image = UIImage(named: "placeholder")
     }
     
-    func prepareConstraints() {
+    private func prepareConstraints() {
         dogImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             dogImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),

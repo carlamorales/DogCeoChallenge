@@ -9,7 +9,7 @@ import UIKit
 
 class BreedsListViewController: UIViewController {
     
-    let breedsListTable = UITableView()
+    private let breedsListTable = UITableView()
     var breedsArray: [String] = []
     var restApiCall: ApiRest?
 
@@ -34,13 +34,13 @@ class BreedsListViewController: UIViewController {
         
     }
     
-    func prepareTableView() {
+    private func prepareTableView() {
         view.addSubview(breedsListTable)
         breedsListTable.pin(to: view)
         breedsListTable.register(BreedsListTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    func prepareTableViewDelegates() {
+    private func prepareTableViewDelegates() {
         breedsListTable.dataSource = self
         breedsListTable.delegate = self
     }

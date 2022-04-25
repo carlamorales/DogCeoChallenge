@@ -18,15 +18,15 @@ class BreedsListTableViewCell: UITableViewCell {
         prepareConstraints()
     }
     
-    func prepareViews() {
+    private func prepareViews() {
         contentView.addSubview(breedLabel)
     }
     
-    func prepareStyles() {
+    private func prepareStyles() {
         breedLabel.font = UIFont.systemFont(ofSize: 18)
     }
     
-    func prepareConstraints() {
+    private func prepareConstraints() {
         breedLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             breedLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
