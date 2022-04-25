@@ -11,6 +11,7 @@ class BreedsListViewController: UIViewController {
     
     let breedsListTable = UITableView()
     var breedsArray: [String] = []
+    var restApiCall: ApiRest?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class BreedsListViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
         
-        APICall.apiCallInstance.fetchApiData { breeds, error in
+        restApiCall?.fetchApiData { breeds, error in
             DispatchQueue.main.async {
                 guard let breeds = breeds else {
                     print(error?.errorMessage ?? "Error")

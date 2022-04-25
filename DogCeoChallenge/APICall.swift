@@ -19,7 +19,7 @@ struct APIError {
     let errorMessage: String
 }
 
-final class APICall {
+class APICall: ApiRest {
     
     static let apiCallInstance = APICall()
     
