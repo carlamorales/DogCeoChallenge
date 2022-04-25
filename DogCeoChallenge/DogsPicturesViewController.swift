@@ -17,6 +17,8 @@ class DogsPicturesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = dogBreed.uppercased()
+        
         prepareTableView()
         prepareTableViewDelegates()
 
