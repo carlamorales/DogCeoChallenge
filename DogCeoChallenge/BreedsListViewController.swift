@@ -66,6 +66,7 @@ extension BreedsListViewController: UITableViewDelegate {
         let cellContent = breedsArray[indexPath.row]
         vcDogsPictures.title = cellContent.uppercased()
         vcDogsPictures.dogBreed = cellContent
+        vcDogsPictures.restApiCall = APICall()
         navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     

@@ -12,6 +12,7 @@ class DogsPicturesViewController: UIViewController {
     let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
     var dogBreed: String = ""
+    var restApiCall: ApiRest?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,7 @@ class DogsPicturesViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
 
-        APICall.apiCallInstance.fetchApiPictures(breed: dogBreed) { pictures, error in
+        restApiCall?.fetchApiPictures(breed: dogBreed) { pictures, error in
             DispatchQueue.main.async {
                 guard let pictures = pictures else {
                     print(error?.errorMessage ?? "Error")

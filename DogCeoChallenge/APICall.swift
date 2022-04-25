@@ -21,7 +21,11 @@ struct APIError {
 
 class APICall: ApiRest {
     
-    static let apiCallInstance = APICall()
+    private let urlSession: URLSession
+    
+    init(session: URLSession = URLSession.shared) {
+        urlSession = session
+    }
     
     func fetchApiData(onCompletion: @escaping ([String]?, APIError?) -> Void) {
         let url = URL(string: "https://dog.ceo/api/breeds/list")!
@@ -30,7 +34,7 @@ class APICall: ApiRest {
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = urlSession.dataTask(with: request) { data, response, error in
             if let data = data {
                 if let breedsList = try? JSONDecoder().decode(BreedsList.self, from: data) {
                     onCompletion(breedsList.message, nil)
@@ -51,7 +55,7 @@ class APICall: ApiRest {
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = urlSession.dataTask(with: request) { data, response, error in
             if let data = data {
                 if let picturesList = try? JSONDecoder().decode(PicturesList.self, from: data) {
                     onCompletion(picturesList.message, nil)
