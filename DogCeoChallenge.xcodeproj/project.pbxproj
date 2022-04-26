@@ -18,6 +18,8 @@
 		044CD19B2818322E00FBA241 /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD19A2818322E00FBA241 /* BreedsList.swift */; };
 		044CD19D2818325800FBA241 /* PicturesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD19C2818325800FBA241 /* PicturesList.swift */; };
 		044CD19F2818348700FBA241 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD19E2818348700FBA241 /* DomainError.swift */; };
+		044CD1A32818357F00FBA241 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A22818357F00FBA241 /* DogRepository.swift */; };
+		044CD1A52818359D00FBA241 /* DogApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A42818359D00FBA241 /* DogApiRepository.swift */; };
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
@@ -37,6 +39,8 @@
 		044CD19A2818322E00FBA241 /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 		044CD19C2818325800FBA241 /* PicturesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesList.swift; sourceTree = "<group>"; };
 		044CD19E2818348700FBA241 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		044CD1A22818357F00FBA241 /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
+		044CD1A42818359D00FBA241 /* DogApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiRepository.swift; sourceTree = "<group>"; };
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		044CD197281831BF00FBA241 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				044CD1A02818352E00FBA241 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -121,6 +126,23 @@
 				044CD19E2818348700FBA241 /* DomainError.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		044CD1A02818352E00FBA241 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				044CD1A12818354100FBA241 /* Datasource */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		044CD1A12818354100FBA241 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				044CD1A22818357F00FBA241 /* DogRepository.swift */,
+				044CD1A42818359D00FBA241 /* DogApiRepository.swift */,
+			);
+			path = Datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +224,10 @@
 				04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */,
 				0404AEEB2810B39600E03460 /* BreedsListViewController.swift in Sources */,
 				040CD88D2810EE5A00B57F12 /* APICall.swift in Sources */,
+				044CD1A52818359D00FBA241 /* DogApiRepository.swift in Sources */,
 				0404AEE72810B39600E03460 /* AppDelegate.swift in Sources */,
 				044CD19F2818348700FBA241 /* DomainError.swift in Sources */,
+				044CD1A32818357F00FBA241 /* DogRepository.swift in Sources */,
 				041FC7C42814597B008AF4DA /* BreedsListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
