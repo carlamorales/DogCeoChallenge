@@ -11,7 +11,7 @@ class BreedsListViewController: UIViewController {
     
     private let breedsListTable = UITableView()
     var breedsArray: [String] = []
-    var restApiCall: ApiRest?
+    var dogRepository: DogRepository?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +21,16 @@ class BreedsListViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
         
-        restApiCall?.fetchApiData { breeds, error in
+        dogRepository?.fetchDogBreeds(onCompletion: { breeds, error in
             DispatchQueue.main.async {
                 guard let breeds = breeds else {
-                    print(error?.errorMessage ?? "Error")
+                    print(error?.description ?? "Error")
                     return
                 }
-                self.breedsArray = breeds
+                self.breedsArray = breeds.message
                 self.breedsListTable.reloadData()
             }
-        }
+        })
         
     }
     

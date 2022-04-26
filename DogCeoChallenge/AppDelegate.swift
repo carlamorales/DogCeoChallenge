@@ -19,8 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .systemBackground
         
         let restApiCall = APICall()
+        let repository = DogApiRepository(restApi: restApiCall)
+//        let dbCall = DBCall()
+//        let repository = DogDBRepository(dbCall: dbCall)
         let breedsListViewController = BreedsListViewController()
-        breedsListViewController.restApiCall = restApiCall
+        breedsListViewController.dogRepository = repository
         
         let navigationController = UINavigationController(rootViewController: breedsListViewController)
         window?.rootViewController = navigationController

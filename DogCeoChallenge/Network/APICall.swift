@@ -1,9 +1,5 @@
 import Foundation
 
-struct APIError {
-    let errorMessage: String
-}
-
 class APICall: ApiRest {
     
     private let urlSession: URLSession
