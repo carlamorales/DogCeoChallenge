@@ -1,5 +1,5 @@
 class DogApiRepository: DogRepository {
-    
+        
     private let restApi: ApiRest
     
     init(restApi: ApiRest) {
@@ -17,4 +17,17 @@ class DogApiRepository: DogRepository {
             }
         }
     }
+    
+    func fetchDogPictures(breed: String, onCompletion: @escaping (PicturesList?, DomainError?) -> Void) {
+        restApi.fetchApiPictures(breed: breed) { pictures, error in
+            if let pictures = pictures {
+                let list = PicturesList(message: pictures)
+                onCompletion(list, nil)
+            } else {
+                let domainError = DomainError(description: error?.errorMessage ?? "Error Generico")
+                onCompletion(nil, domainError)
+            }
+        }
+    }
+    
 }

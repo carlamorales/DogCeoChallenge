@@ -1,10 +1,3 @@
-//
-//  UIImageViewExtension.swift
-//  DogCeoChallenge
-//
-//  Created by Mobdev on 22-04-22.
-//
-
 import UIKit
 
 var nsCache = NSCache<NSString, UIImage>()

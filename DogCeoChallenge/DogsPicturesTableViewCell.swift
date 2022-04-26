@@ -1,10 +1,3 @@
-//
-//  DogsPicturesTableViewCell.swift
-//  DogCeoChallenge
-//
-//  Created by Mobdev on 23-04-22.
-//
-
 import UIKit
 
 class DogsPicturesTableViewCell: UITableViewCell {

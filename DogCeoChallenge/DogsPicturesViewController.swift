@@ -1,10 +1,3 @@
-//
-//  DogsPicturesViewController.swift
-//  DogCeoChallenge
-//
-//  Created by Mobdev on 21-04-22.
-//
-
 import UIKit
 
 class DogsPicturesViewController: UIViewController {
@@ -12,7 +5,7 @@ class DogsPicturesViewController: UIViewController {
     private let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
     var dogBreed: String = ""
-    var restApiCall: ApiRest?
+    var dogRepository: DogRepository?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +14,17 @@ class DogsPicturesViewController: UIViewController {
         
         prepareTableView()
         prepareTableViewDelegates()
-
-        restApiCall?.fetchApiPictures(breed: dogBreed) { pictures, error in
+        
+        dogRepository?.fetchDogPictures(breed: dogBreed, onCompletion: { pictures, error in
             DispatchQueue.main.async {
                 guard let pictures = pictures else {
-                    print(error?.errorMessage ?? "Error")
+                    print(error?.description ?? "Error")
                     return
                 }
-                self.picturesArray = pictures
+                self.picturesArray = pictures.message
                 self.dogsPicturesTable.reloadData()
             }
-        }
+        })
         
     }
     

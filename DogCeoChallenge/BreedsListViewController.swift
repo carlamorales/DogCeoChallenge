@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  DogCeoChallenge
-//
-//  Created by Mobdev on 20-04-22.
-//
-
 import UIKit
 
 class BreedsListViewController: UIViewController {
@@ -65,7 +58,8 @@ extension BreedsListViewController: UITableViewDelegate {
         let vcDogsPictures = DogsPicturesViewController()
         let cellContent = breedsArray[indexPath.row]
         vcDogsPictures.dogBreed = cellContent
-        vcDogsPictures.restApiCall = APICall()
+        let restApiCall = APICall()
+        vcDogsPictures.dogRepository = DogApiRepository(restApi: restApiCall)
         navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     

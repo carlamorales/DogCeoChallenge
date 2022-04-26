@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  DogCeoChallenge
-//
-//  Created by Mobdev on 20-04-22.
-//
-
 import UIKit
 
 @main

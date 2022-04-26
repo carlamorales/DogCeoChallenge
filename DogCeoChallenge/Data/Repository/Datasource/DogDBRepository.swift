@@ -4,7 +4,7 @@
 //
 //  Created by Mobdev on 26-04-22.
 //
-
+/*
 import Foundation
 
 struct DBError {
@@ -42,3 +42,4 @@ class DogDBRepository: DogRepository {
     }
 
 }
+*/
