@@ -1,19 +1,4 @@
-//
-//  APICall.swift
-//  DogCeoChallenge
-//
-//  Created by Mobdev on 20-04-22.
-//
-
 import Foundation
-
-struct BreedsList: Decodable {
-    let message: [String]
-}
-
-struct PicturesList: Decodable {
-    let message: [String]
-}
 
 struct APIError {
     let errorMessage: String
