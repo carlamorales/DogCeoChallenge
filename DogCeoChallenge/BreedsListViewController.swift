@@ -59,7 +59,8 @@ extension BreedsListViewController: UITableViewDelegate {
         let cellContent = breedsArray[indexPath.row]
         vcDogsPictures.dogBreed = cellContent
         let restApiCall = APICall()
-        vcDogsPictures.dogRepository = DogApiRepository(restApi: restApiCall)
+        let breedsMapper = BreedsListToArrayMapper()
+        vcDogsPictures.dogRepository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper)
         navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     

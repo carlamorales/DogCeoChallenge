@@ -28,24 +28,14 @@ class Mapper<T1, T2> {
     
 }
 
-/*
-class BreedListToArrayMapper {
-    func map(value: BreedsList) -> [String] {
-        return value.message
-    }
-
-    func reverseMap(value: [String]) -> BreedsList {
+class BreedsListToArrayMapper: Mapper<BreedsList, [String]> {
+    override func reverseMap(value: [String]) -> BreedsList {
         return BreedsList(message: value)
     }
 }
 
-class PictureListToArrayMapper {
-    func map(value: PicturesList) -> [String] {
-        return value.message
-    }
-
-    func reverseMap(value: [String]) -> PicturesList {
+class PicturesListToArrayMapper: Mapper<PicturesList, [String]> {
+    override func reverseMap(value: [String]) -> PicturesList {
         return PicturesList(message: value)
     }
 }
-*/
