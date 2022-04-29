@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let restApiCall = APICall()
         let breedsMapper = BreedsListToArrayMapper()
-        let repository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper)
+        let picturesMapper = PicturesListToArrayMapper()
+        let repository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper, picturesMapper: picturesMapper)
         let breedsListViewController = BreedsListViewController()
         breedsListViewController.dogRepository = repository
         

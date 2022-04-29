@@ -2,10 +2,12 @@ class DogApiRepository: DogRepository {
         
     private let restApi: ApiRest
     private let breedsMapper: Mapper<BreedsList, [String]>
+    private let picturesMapper: Mapper<PicturesList, [String]>
     
-    init(restApi: ApiRest, breedsMapper: Mapper<BreedsList, [String]>) {
+    init(restApi: ApiRest, breedsMapper: Mapper<BreedsList, [String]>, picturesMapper: Mapper<PicturesList, [String]>) {
         self.restApi = restApi
         self.breedsMapper = breedsMapper
+        self.picturesMapper = picturesMapper
     }
     
     func fetchDogBreeds(onCompletion: @escaping (BreedsList?, DomainError?) -> Void) {
@@ -23,7 +25,7 @@ class DogApiRepository: DogRepository {
     func fetchDogPictures(breed: String, onCompletion: @escaping (PicturesList?, DomainError?) -> Void) {
         restApi.fetchApiPictures(breed: breed) { pictures, error in
             if let pictures = pictures {
-                let list = PicturesList(message: pictures)
+                let list = self.picturesMapper.reverseMap(value: pictures)
                 onCompletion(list, nil)
             } else {
                 let domainError = DomainError(description: error?.errorMessage ?? "Error Generico")
