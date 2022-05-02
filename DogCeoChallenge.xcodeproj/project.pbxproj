@@ -22,10 +22,21 @@
 		044CD1A32818357F00FBA241 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A22818357F00FBA241 /* DogRepository.swift */; };
 		044CD1A52818359D00FBA241 /* DogApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A42818359D00FBA241 /* DogApiRepository.swift */; };
 		044CD1A8281842FD00FBA241 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A7281842FD00FBA241 /* APIError.swift */; };
+		044CFB612820115100DD9470 /* DogCeoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CFB602820115100DD9470 /* DogCeoChallengeTests.swift */; };
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044CFB622820115100DD9470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0404AEDB2810B39600E03460 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0404AEE22810B39600E03460;
+			remoteInfo = DogCeoChallenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0404AEE32810B39600E03460 /* DogCeoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCeoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +56,8 @@
 		044CD1A22818357F00FBA241 /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
 		044CD1A42818359D00FBA241 /* DogApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiRepository.swift; sourceTree = "<group>"; };
 		044CD1A7281842FD00FBA241 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		044CFB5E2820115100DD9470 /* DogCeoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogCeoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044CFB602820115100DD9470 /* DogCeoChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCeoChallengeTests.swift; sourceTree = "<group>"; };
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
@@ -58,6 +71,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		044CFB5B2820115100DD9470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0404AEE52810B39600E03460 /* DogCeoChallenge */,
+				044CFB5F2820115100DD9470 /* DogCeoChallengeTests */,
 				0404AEE42810B39600E03460 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0404AEE32810B39600E03460 /* DogCeoChallenge.app */,
+				044CFB5E2820115100DD9470 /* DogCeoChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +181,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		044CFB5F2820115100DD9470 /* DogCeoChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				044CFB602820115100DD9470 /* DogCeoChallengeTests.swift */,
+			);
+			path = DogCeoChallengeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +209,24 @@
 			productReference = 0404AEE32810B39600E03460 /* DogCeoChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		044CFB5D2820115100DD9470 /* DogCeoChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044CFB662820115100DD9470 /* Build configuration list for PBXNativeTarget "DogCeoChallengeTests" */;
+			buildPhases = (
+				044CFB5A2820115100DD9470 /* Sources */,
+				044CFB5B2820115100DD9470 /* Frameworks */,
+				044CFB5C2820115100DD9470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044CFB632820115100DD9470 /* PBXTargetDependency */,
+			);
+			name = DogCeoChallengeTests;
+			productName = DogCeoChallengeTests;
+			productReference = 044CFB5E2820115100DD9470 /* DogCeoChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +239,10 @@
 				TargetAttributes = {
 					0404AEE22810B39600E03460 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					044CFB5D2820115100DD9470 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 0404AEE22810B39600E03460;
 					};
 				};
 			};
@@ -208,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				0404AEE22810B39600E03460 /* DogCeoChallenge */,
+				044CFB5D2820115100DD9470 /* DogCeoChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +272,13 @@
 			files = (
 				0404AEF32810B39700E03460 /* LaunchScreen.storyboard in Resources */,
 				0404AEF02810B39700E03460 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CFB5C2820115100DD9470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +308,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		044CFB5A2820115100DD9470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044CFB612820115100DD9470 /* DogCeoChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044CFB632820115100DD9470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0404AEE22810B39600E03460 /* DogCeoChallenge */;
+			targetProxy = 044CFB622820115100DD9470 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0404AEF12810B39700E03460 /* LaunchScreen.storyboard */ = {
@@ -434,6 +510,42 @@
 			};
 			name = Release;
 		};
+		044CFB642820115100DD9470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFX2JT5J6B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlamoralespacheco.DogCeoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogCeoChallenge.app/DogCeoChallenge";
+			};
+			name = Debug;
+		};
+		044CFB652820115100DD9470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFX2JT5J6B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlamoralespacheco.DogCeoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogCeoChallenge.app/DogCeoChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,6 +563,15 @@
 			buildConfigurations = (
 				0404AEF82810B39700E03460 /* Debug */,
 				0404AEF92810B39700E03460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044CFB662820115100DD9470 /* Build configuration list for PBXNativeTarget "DogCeoChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CFB642820115100DD9470 /* Debug */,
+				044CFB652820115100DD9470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
