@@ -1,5 +1,3 @@
-import Foundation
-
 class Mapper<T1, T2> {
     
     func map(value _: T1) -> T2 {
@@ -26,16 +24,4 @@ class Mapper<T1, T2> {
         return newValues
     }
     
-}
-
-class BreedsListToArrayMapper: Mapper<BreedsList, [String]> {
-    override func reverseMap(value: [String]) -> BreedsList {
-        return BreedsList(message: value)
-    }
-}
-
-class PicturesListToArrayMapper: Mapper<PicturesList, [String]> {
-    override func reverseMap(value: [String]) -> PicturesList {
-        return PicturesList(message: value)
-    }
 }
