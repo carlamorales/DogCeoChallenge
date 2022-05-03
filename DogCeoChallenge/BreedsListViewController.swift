@@ -4,7 +4,6 @@ class BreedsListViewController: UIViewController {
     
     private let breedsListTable = UITableView()
     var breedsArray: [String] = []
-    //var dogRepository: DogRepository?
     
     var getBreedsListUseCase: GetBreedsListUseCase?
 

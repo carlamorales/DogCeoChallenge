@@ -5,7 +5,6 @@ class DogsPicturesViewController: UIViewController {
     private let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
     var dogBreed: String = ""
-    //var dogRepository: DogRepository?
     
     var getPicturesListUseCase: GetPicturesListUseCase?
 
