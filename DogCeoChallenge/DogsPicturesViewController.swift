@@ -7,7 +7,7 @@ class DogsPicturesViewController: UIViewController {
     var dogBreed: String = ""
     //var dogRepository: DogRepository?
     
-    var picturesUserCase: GetPicturesListUseCase?
+    var getPicturesListUseCase: GetPicturesListUseCase?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class DogsPicturesViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
         
-        picturesUserCase?.execute(breed: dogBreed, onCompletion: { pictures, error in
+        getPicturesListUseCase?.execute(breed: dogBreed, onCompletion: { pictures, error in
             DispatchQueue.main.async {
                 guard let pictures = pictures else {
                     print(error?.description ?? "Error")

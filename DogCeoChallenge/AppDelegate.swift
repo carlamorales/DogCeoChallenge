@@ -16,12 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let picturesMapper = PicturesListToArrayMapper()
         let repository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper, picturesMapper: picturesMapper)
         
-        let breedList = GetBreedsListUseCase(dogRepository: repository)
-        
-        
         let breedsListViewController = BreedsListViewController()
-        //breedsListViewController.dogRepository = repository
-        breedsListViewController.breedUserCase = breedList
+        
+        let getBreedsListUseCase = GetBreedsListUseCase(dogRepository: repository)
+        breedsListViewController.getBreedsListUseCase = getBreedsListUseCase
         
         let navigationController = UINavigationController(rootViewController: breedsListViewController)
         window?.rootViewController = navigationController
