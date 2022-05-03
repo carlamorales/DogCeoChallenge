@@ -5,7 +5,9 @@ class DogsPicturesViewController: UIViewController {
     private let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
     var dogBreed: String = ""
-    var dogRepository: DogRepository?
+    //var dogRepository: DogRepository?
+    
+    var picturesUserCase: GetPicturesListUseCase?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +17,7 @@ class DogsPicturesViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
         
-        dogRepository?.fetchDogPictures(breed: dogBreed, onCompletion: { pictures, error in
+        picturesUserCase?.execute(breed: dogBreed, onCompletion: { pictures, error in
             DispatchQueue.main.async {
                 guard let pictures = pictures else {
                     print(error?.description ?? "Error")

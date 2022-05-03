@@ -16,6 +16,8 @@
 		040CD88D2810EE5A00B57F12 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD88C2810EE5A00B57F12 /* APICall.swift */; };
 		041FC7C42814597B008AF4DA /* BreedsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */; };
 		041FC7C628146381008AF4DA /* DogsPicturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */; };
+		04310F712821751600BEDAB8 /* GetBreedsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04310F702821751600BEDAB8 /* GetBreedsListUseCase.swift */; };
+		04310F732821B03200BEDAB8 /* GetPicturesListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04310F722821B03200BEDAB8 /* GetPicturesListUseCase.swift */; };
 		044CD19B2818322E00FBA241 /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD19A2818322E00FBA241 /* BreedsList.swift */; };
 		044CD19D2818325800FBA241 /* PicturesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD19C2818325800FBA241 /* PicturesList.swift */; };
 		044CD19F2818348700FBA241 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD19E2818348700FBA241 /* DomainError.swift */; };
@@ -50,6 +52,8 @@
 		040CD88C2810EE5A00B57F12 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListTableViewCell.swift; sourceTree = "<group>"; };
 		041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesTableViewCell.swift; sourceTree = "<group>"; };
+		04310F702821751600BEDAB8 /* GetBreedsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBreedsListUseCase.swift; sourceTree = "<group>"; };
+		04310F722821B03200BEDAB8 /* GetPicturesListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPicturesListUseCase.swift; sourceTree = "<group>"; };
 		044CD19A2818322E00FBA241 /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 		044CD19C2818325800FBA241 /* PicturesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesList.swift; sourceTree = "<group>"; };
 		044CD19E2818348700FBA241 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
@@ -119,9 +123,19 @@
 			path = DogCeoChallenge;
 			sourceTree = "<group>";
 		};
+		04310F6F2821741600BEDAB8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				04310F702821751600BEDAB8 /* GetBreedsListUseCase.swift */,
+				04310F722821B03200BEDAB8 /* GetPicturesListUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		044CD196281831A800FBA241 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				04310F6F2821741600BEDAB8 /* UseCase */,
 				044CD1992818320D00FBA241 /* Model */,
 			);
 			path = Domain;
@@ -292,6 +306,7 @@
 				044CD19B2818322E00FBA241 /* BreedsList.swift in Sources */,
 				047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */,
 				041FC7C628146381008AF4DA /* DogsPicturesTableViewCell.swift in Sources */,
+				04310F732821B03200BEDAB8 /* GetPicturesListUseCase.swift in Sources */,
 				0404AEFB2810BDBF00E03460 /* UIViewExtension.swift in Sources */,
 				044CD19D2818325800FBA241 /* PicturesList.swift in Sources */,
 				04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */,
@@ -305,6 +320,7 @@
 				044CD19F2818348700FBA241 /* DomainError.swift in Sources */,
 				044CD1A32818357F00FBA241 /* DogRepository.swift in Sources */,
 				041FC7C42814597B008AF4DA /* BreedsListTableViewCell.swift in Sources */,
+				04310F712821751600BEDAB8 /* GetBreedsListUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

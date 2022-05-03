@@ -4,7 +4,9 @@ class BreedsListViewController: UIViewController {
     
     private let breedsListTable = UITableView()
     var breedsArray: [String] = []
-    var dogRepository: DogRepository?
+    //var dogRepository: DogRepository?
+    
+    var breedUserCase: GetBreedsListUseCase?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,7 +16,7 @@ class BreedsListViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
         
-        dogRepository?.fetchDogBreeds(onCompletion: { breeds, error in
+        breedUserCase?.execute(onCompletion: { breeds, error in
             DispatchQueue.main.async {
                 guard let breeds = breeds else {
                     print(error?.description ?? "Error")
@@ -61,7 +63,11 @@ extension BreedsListViewController: UITableViewDelegate {
         let restApiCall = APICall()
         let breedsMapper = BreedsListToArrayMapper()
         let picturesMapper = PicturesListToArrayMapper()
-        vcDogsPictures.dogRepository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper, picturesMapper: picturesMapper)
+        
+        let repository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper, picturesMapper: picturesMapper)
+        vcDogsPictures.picturesUserCase = GetPicturesListUseCase(dogRepository: repository)
+        
+//        vcDogsPictures.dogRepository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper, picturesMapper: picturesMapper)
         navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     
