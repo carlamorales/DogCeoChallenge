@@ -26,7 +26,7 @@
 		044CD1A32818357F00FBA241 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A22818357F00FBA241 /* DogRepository.swift */; };
 		044CD1A52818359D00FBA241 /* DogApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A42818359D00FBA241 /* DogApiRepository.swift */; };
 		044CD1A8281842FD00FBA241 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A7281842FD00FBA241 /* APIError.swift */; };
-		044CFB612820115100DD9470 /* DogCeoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CFB602820115100DD9470 /* DogCeoChallengeTests.swift */; };
+		044CFB612820115100DD9470 /* APICallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CFB602820115100DD9470 /* APICallTests.swift */; };
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
@@ -65,7 +65,7 @@
 		044CD1A42818359D00FBA241 /* DogApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiRepository.swift; sourceTree = "<group>"; };
 		044CD1A7281842FD00FBA241 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		044CFB5E2820115100DD9470 /* DogCeoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogCeoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		044CFB602820115100DD9470 /* DogCeoChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCeoChallengeTests.swift; sourceTree = "<group>"; };
+		044CFB602820115100DD9470 /* APICallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallTests.swift; sourceTree = "<group>"; };
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
@@ -204,9 +204,17 @@
 		044CFB5F2820115100DD9470 /* DogCeoChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				044CFB602820115100DD9470 /* DogCeoChallengeTests.swift */,
+				04F7A6BA28221C19002A5698 /* Network */,
 			);
 			path = DogCeoChallengeTests;
+			sourceTree = "<group>";
+		};
+		04F7A6BA28221C19002A5698 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				044CFB602820115100DD9470 /* APICallTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044CFB612820115100DD9470 /* DogCeoChallengeTests.swift in Sources */,
+				044CFB612820115100DD9470 /* APICallTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
