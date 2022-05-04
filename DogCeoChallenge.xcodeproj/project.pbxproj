@@ -28,8 +28,11 @@
 		044CD1A8281842FD00FBA241 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD1A7281842FD00FBA241 /* APIError.swift */; };
 		044CFB612820115100DD9470 /* APICallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CFB602820115100DD9470 /* APICallTests.swift */; };
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
+		048C789E2822E42C00305CC7 /* DogApiRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C789D2822E42C00305CC7 /* DogApiRepositoryTests.swift */; };
+		048C78A12822FF4700305CC7 /* ApiRestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C78A02822FF4700305CC7 /* ApiRestMock.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
+		3D48A96D21D91C67FC5AF773 /* libPods-DogCeoChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +70,13 @@
 		044CFB5E2820115100DD9470 /* DogCeoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogCeoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044CFB602820115100DD9470 /* APICallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallTests.swift; sourceTree = "<group>"; };
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
+		048C789D2822E42C00305CC7 /* DogApiRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiRepositoryTests.swift; sourceTree = "<group>"; };
+		048C78A02822FF4700305CC7 /* ApiRestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRestMock.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
+		0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D457D370698F0DFFCB8ED80 /* Pods-DogCeoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DogCeoChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D48A96D21D91C67FC5AF773 /* libPods-DogCeoChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +104,8 @@
 				0404AEE52810B39600E03460 /* DogCeoChallenge */,
 				044CFB5F2820115100DD9470 /* DogCeoChallengeTests */,
 				0404AEE42810B39600E03460 /* Products */,
+				0F143BD80903E8C97EB7B4A6 /* Pods */,
+				E89DEE6CDE7B2947D1FD27AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +150,7 @@
 		044CD196281831A800FBA241 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				044CD1A22818357F00FBA241 /* DogRepository.swift */,
 				04310F6F2821741600BEDAB8 /* UseCase */,
 				044CD1992818320D00FBA241 /* Model */,
 			);
@@ -148,6 +160,7 @@
 		044CD197281831BF00FBA241 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				048C789C2822E38F00305CC7 /* Mapper */,
 				044CD1A02818352E00FBA241 /* Repository */,
 			);
 			path = Data;
@@ -176,21 +189,9 @@
 		044CD1A02818352E00FBA241 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				044CD1A12818354100FBA241 /* Datasource */,
+				044CD1A42818359D00FBA241 /* DogApiRepository.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		044CD1A12818354100FBA241 /* Datasource */ = {
-			isa = PBXGroup;
-			children = (
-				044CD1A22818357F00FBA241 /* DogRepository.swift */,
-				044CD1A42818359D00FBA241 /* DogApiRepository.swift */,
-				04092422281B2B2700A82440 /* Mapper.swift */,
-				042817AD2821DDEE0018B5D9 /* BreedsListToArrayMapper.swift */,
-				042817AF2821DE570018B5D9 /* PicturesListToArrayMapper.swift */,
-			);
-			path = Datasource;
 			sourceTree = "<group>";
 		};
 		044CD1A62818376D00FBA241 /* Model */ = {
@@ -204,9 +205,45 @@
 		044CFB5F2820115100DD9470 /* DogCeoChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				048C789F2822FED500305CC7 /* Mock */,
+				048C789A2822E28000305CC7 /* Data */,
 				04F7A6BA28221C19002A5698 /* Network */,
 			);
 			path = DogCeoChallengeTests;
+			sourceTree = "<group>";
+		};
+		048C789A2822E28000305CC7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				048C789B2822E28D00305CC7 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		048C789B2822E28D00305CC7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				048C789D2822E42C00305CC7 /* DogApiRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		048C789C2822E38F00305CC7 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				04092422281B2B2700A82440 /* Mapper.swift */,
+				042817AD2821DDEE0018B5D9 /* BreedsListToArrayMapper.swift */,
+				042817AF2821DE570018B5D9 /* PicturesListToArrayMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		048C789F2822FED500305CC7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				048C78A02822FF4700305CC7 /* ApiRestMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		04F7A6BA28221C19002A5698 /* Network */ = {
@@ -215,6 +252,23 @@
 				044CFB602820115100DD9470 /* APICallTests.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0F143BD80903E8C97EB7B4A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */,
+				9D457D370698F0DFFCB8ED80 /* Pods-DogCeoChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E89DEE6CDE7B2947D1FD27AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044CFB662820115100DD9470 /* Build configuration list for PBXNativeTarget "DogCeoChallengeTests" */;
 			buildPhases = (
+				6BD0048533C4B92F345D45D3 /* [CP] Check Pods Manifest.lock */,
 				044CFB5A2820115100DD9470 /* Sources */,
 				044CFB5B2820115100DD9470 /* Frameworks */,
 				044CFB5C2820115100DD9470 /* Resources */,
@@ -312,6 +367,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BD0048533C4B92F345D45D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogCeoChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0404AEDF2810B39600E03460 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,7 +424,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048C78A12822FF4700305CC7 /* ApiRestMock.swift in Sources */,
 				044CFB612820115100DD9470 /* APICallTests.swift in Sources */,
+				048C789E2822E42C00305CC7 /* DogApiRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +626,7 @@
 		};
 		044CFB642820115100DD9470 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +645,7 @@
 		};
 		044CFB652820115100DD9470 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D457D370698F0DFFCB8ED80 /* Pods-DogCeoChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
