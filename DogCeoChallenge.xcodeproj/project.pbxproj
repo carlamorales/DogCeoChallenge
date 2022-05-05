@@ -30,6 +30,9 @@
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
 		048C789E2822E42C00305CC7 /* DogApiRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C789D2822E42C00305CC7 /* DogApiRepositoryTests.swift */; };
 		048C78A12822FF4700305CC7 /* ApiRestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C78A02822FF4700305CC7 /* ApiRestMock.swift */; };
+		04A157C62824273500C88C0A /* DogRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157C52824273500C88C0A /* DogRepositoryMock.swift */; };
+		04A157C9282449E600C88C0A /* GetBreedsListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157C8282449E600C88C0A /* GetBreedsListUseCaseTests.swift */; };
+		04A157CB28244EA000C88C0A /* GetPicturesListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157CA28244EA000C88C0A /* GetPicturesListUseCaseTests.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
 		3D48A96D21D91C67FC5AF773 /* libPods-DogCeoChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */; };
@@ -72,6 +75,9 @@
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
 		048C789D2822E42C00305CC7 /* DogApiRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiRepositoryTests.swift; sourceTree = "<group>"; };
 		048C78A02822FF4700305CC7 /* ApiRestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRestMock.swift; sourceTree = "<group>"; };
+		04A157C52824273500C88C0A /* DogRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepositoryMock.swift; sourceTree = "<group>"; };
+		04A157C8282449E600C88C0A /* GetBreedsListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBreedsListUseCaseTests.swift; sourceTree = "<group>"; };
+		04A157CA28244EA000C88C0A /* GetPicturesListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPicturesListUseCaseTests.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
 		0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				048C789F2822FED500305CC7 /* Mock */,
+				04A157C7282449B100C88C0A /* Domain */,
 				048C789A2822E28000305CC7 /* Data */,
 				04F7A6BA28221C19002A5698 /* Network */,
 			);
@@ -242,8 +249,18 @@
 			isa = PBXGroup;
 			children = (
 				048C78A02822FF4700305CC7 /* ApiRestMock.swift */,
+				04A157C52824273500C88C0A /* DogRepositoryMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		04A157C7282449B100C88C0A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				04A157C8282449E600C88C0A /* GetBreedsListUseCaseTests.swift */,
+				04A157CA28244EA000C88C0A /* GetPicturesListUseCaseTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		04F7A6BA28221C19002A5698 /* Network */ = {
@@ -425,7 +442,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				048C78A12822FF4700305CC7 /* ApiRestMock.swift in Sources */,
+				04A157CB28244EA000C88C0A /* GetPicturesListUseCaseTests.swift in Sources */,
+				04A157C9282449E600C88C0A /* GetBreedsListUseCaseTests.swift in Sources */,
 				044CFB612820115100DD9470 /* APICallTests.swift in Sources */,
+				04A157C62824273500C88C0A /* DogRepositoryMock.swift in Sources */,
 				048C789E2822E42C00305CC7 /* DogApiRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
