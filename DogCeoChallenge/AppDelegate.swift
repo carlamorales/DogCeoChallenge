@@ -11,15 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
-        let restApiCall = APICall()
-        let breedsMapper = BreedsListToArrayMapper()
-        let picturesMapper = PicturesListToArrayMapper()
-        let repository = DogApiRepository(restApi: restApiCall, breedsMapper: breedsMapper, picturesMapper: picturesMapper)
-        
         let breedsListViewController = BreedsListViewController()
-        
-        let getBreedsListUseCase = GetBreedsListUseCase(dogRepository: repository)
-        breedsListViewController.getBreedsListUseCase = getBreedsListUseCase
+        breedsListViewController.getBreedsListUseCase = DogCeoServiceLocator().getBreedsListUseCase
         
         let navigationController = UINavigationController(rootViewController: breedsListViewController)
         window?.rootViewController = navigationController
