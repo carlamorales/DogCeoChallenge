@@ -108,11 +108,11 @@
 		512229A584BC426BD49F22A6F37DF51E /* Mimic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mimic.release.xcconfig; sourceTree = "<group>"; };
 		57AB1CE9E3D88BA329DD307CAC2C7608 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		58928F8C9A354B91B8F803CE6F96073E /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		5A1045C3C6A6C0EB6A67C78F39ACEBA9 /* Mimic */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Mimic; path = libMimic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1045C3C6A6C0EB6A67C78F39ACEBA9 /* libMimic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMimic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC47CFF5503F41E6060D391009B6CC1 /* Pods-DogCeoChallenge-DogCeoChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DogCeoChallenge-DogCeoChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D051DA046D2BF19902E31E99C3A49BD /* Pods-DogCeoChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DogCeoChallenge.modulemap"; sourceTree = "<group>"; };
 		5D6667C116B69AD901084478DB214DFC /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Alamofire; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F49E1994505BBE4ACC956D5A9CF7403 /* Pods-DogCeoChallenge-DogCeoChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DogCeoChallenge-DogCeoChallengeTests-umbrella.h"; sourceTree = "<group>"; };
 		61AAD501A3D16201C4615379ED9D6301 /* Pods-DogCeoChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DogCeoChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
 		62699A79C8B3F1EC1CD0371667568DFC /* Pods-DogCeoChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DogCeoChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		92E7CFE254D5C19486DED92EB9A56420 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		991538E295EE58A20321BAD3BA01DD0D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9B91C0FE68867D714D8AC6636B73694D /* MimicResponseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MimicResponseType.swift; path = Sources/MimicResponseType.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC83C39CCB39E92FA2028D6084201F7 /* Pods-DogCeoChallenge-DogCeoChallengeTests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-DogCeoChallenge-DogCeoChallengeTests"; path = "libPods-DogCeoChallenge-DogCeoChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD64AC8C659E5C05C699325620F6C81 /* Pods-DogCeoChallenge */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-DogCeoChallenge"; path = "libPods-DogCeoChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18AAD7D9F4E9A53BAB19B1DD04F32C6 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
@@ -234,7 +234,6 @@
 				3750BB1531ED4121B58789990DAB672E /* Validation.swift */,
 				8EBA6446B7AF4D9F873F4234C6206B65 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -250,7 +249,6 @@
 				D806B08D55C612E7FC41CED05999C4B7 /* URLSessionConfiguration+Mimic.swift */,
 				7647BDF3D783D3B98B0B73A70E420A21 /* Support Files */,
 			);
-			name = Mimic;
 			path = Mimic;
 			sourceTree = "<group>";
 		};
@@ -315,8 +313,8 @@
 		CEAB50FDA6774F7FD98E6CBC5E957020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				5A1045C3C6A6C0EB6A67C78F39ACEBA9 /* Mimic */,
+				5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */,
+				5A1045C3C6A6C0EB6A67C78F39ACEBA9 /* libMimic.a */,
 				9DD64AC8C659E5C05C699325620F6C81 /* Pods-DogCeoChallenge */,
 				9DC83C39CCB39E92FA2028D6084201F7 /* Pods-DogCeoChallenge-DogCeoChallengeTests */,
 			);
@@ -449,7 +447,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		ECA69F7BDEABE9E4F0C64293F456329A /* Mimic */ = {
@@ -467,7 +465,7 @@
 			);
 			name = Mimic;
 			productName = Mimic;
-			productReference = 5A1045C3C6A6C0EB6A67C78F39ACEBA9 /* Mimic */;
+			productReference = 5A1045C3C6A6C0EB6A67C78F39ACEBA9 /* libMimic.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -477,7 +475,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1330;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -749,7 +747,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -775,7 +773,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Mimic/Mimic-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULEMAP_FILE = Headers/Public/Mimic/Mimic.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -824,7 +822,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Mimic/Mimic-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULEMAP_FILE = Headers/Public/Mimic/Mimic.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -849,7 +847,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";

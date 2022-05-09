@@ -36,6 +36,7 @@
 		04A157CB28244EA000C88C0A /* GetPicturesListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157CA28244EA000C88C0A /* GetPicturesListUseCaseTests.swift */; };
 		04A157CE282470AB00C88C0A /* BreedsListToArrayMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157CD282470AB00C88C0A /* BreedsListToArrayMapperTests.swift */; };
 		04A157D0282470CA00C88C0A /* PicturesListToArrayMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157CF282470CA00C88C0A /* PicturesListToArrayMapperTests.swift */; };
+		04A97E3A282968F900D22BB8 /* AlamofireApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
 		0AFD0F3B5EBECC0F41A5D7DE /* libPods-DogCeoChallenge-DogCeoChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FA6B6140FC4BC3F98CAD4 /* libPods-DogCeoChallenge-DogCeoChallengeTests.a */; };
@@ -85,6 +86,7 @@
 		04A157CA28244EA000C88C0A /* GetPicturesListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPicturesListUseCaseTests.swift; sourceTree = "<group>"; };
 		04A157CD282470AB00C88C0A /* BreedsListToArrayMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListToArrayMapperTests.swift; sourceTree = "<group>"; };
 		04A157CF282470CA00C88C0A /* PicturesListToArrayMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesListToArrayMapperTests.swift; sourceTree = "<group>"; };
+		04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiCall.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
 		0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			children = (
 				044CD1A62818376D00FBA241 /* Model */,
 				040CD88C2810EE5A00B57F12 /* APICall.swift */,
+				04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */,
 				04FB430C2816D7C400E74740 /* ApiRest.swift */,
 			);
 			path = Network;
@@ -475,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044CD19B2818322E00FBA241 /* BreedsList.swift in Sources */,
+				04A97E3A282968F900D22BB8 /* AlamofireApiCall.swift in Sources */,
 				047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */,
 				041FC7C628146381008AF4DA /* DogsPicturesTableViewCell.swift in Sources */,
 				04310F732821B03200BEDAB8 /* GetPicturesListUseCase.swift in Sources */,

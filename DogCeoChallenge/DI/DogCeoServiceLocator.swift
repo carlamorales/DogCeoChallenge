@@ -1,5 +1,5 @@
 class DogCeoServiceLocator {
-    private let restApi = APICall()
+    private let restApi = AlamofireApiCall()
     private let breedsListToArrayMapper = BreedsListToArrayMapper()
     private let picturesListToArrayMapper = PicturesListToArrayMapper()
     
