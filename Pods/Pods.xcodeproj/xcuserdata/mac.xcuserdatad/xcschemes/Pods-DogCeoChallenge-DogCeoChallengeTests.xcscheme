@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ECA69F7BDEABE9E4F0C64293F456329A"
-               BuildableName = "libMimic.a"
-               BlueprintName = "Mimic"
+               BlueprintIdentifier = "724781364D5F388C729495682093623D"
+               BuildableName = "libPods-DogCeoChallenge-DogCeoChallengeTests.a"
+               BlueprintName = "Pods-DogCeoChallenge-DogCeoChallengeTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

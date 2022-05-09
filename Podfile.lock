@@ -1,16 +1,20 @@
 PODS:
+  - Alamofire (5.6.1)
   - Mimic (1.3.2)
 
 DEPENDENCIES:
+  - Alamofire
   - Mimic
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Mimic
 
 SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   Mimic: d7086284f407486ad28cb0e41ef060a2911a7634
 
-PODFILE CHECKSUM: 4b1ff58868b3fb81ce3f97527588f5d763eae07f
+PODFILE CHECKSUM: 698112f889f373be658814fd7c186559fb96be66
 
 COCOAPODS: 1.11.3

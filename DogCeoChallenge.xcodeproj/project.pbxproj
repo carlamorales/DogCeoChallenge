@@ -38,7 +38,8 @@
 		04A157D0282470CA00C88C0A /* PicturesListToArrayMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A157CF282470CA00C88C0A /* PicturesListToArrayMapperTests.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
-		3D48A96D21D91C67FC5AF773 /* libPods-DogCeoChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */; };
+		0AFD0F3B5EBECC0F41A5D7DE /* libPods-DogCeoChallenge-DogCeoChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FA6B6140FC4BC3F98CAD4 /* libPods-DogCeoChallenge-DogCeoChallengeTests.a */; };
+		CD76DFC4B0AF6000CE16D432 /* libPods-DogCeoChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BADAF6BA4BFA35A32D0C9D6 /* libPods-DogCeoChallenge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +88,13 @@
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
 		0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		210A13286CD9D4D16F070020 /* Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-DogCeoChallenge-DogCeoChallengeTests/Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		35D8AE0C977A75BBA5847D25 /* Pods-DogCeoChallenge-DogCeoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallenge-DogCeoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallenge-DogCeoChallengeTests/Pods-DogCeoChallenge-DogCeoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86CB9C58ABFCD0D05107CFA1 /* Pods-DogCeoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallenge.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallenge/Pods-DogCeoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		8BADAF6BA4BFA35A32D0C9D6 /* libPods-DogCeoChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DogCeoChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D457D370698F0DFFCB8ED80 /* Pods-DogCeoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
-		A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DogCeoChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32FA6B6140FC4BC3F98CAD4 /* libPods-DogCeoChallenge-DogCeoChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DogCeoChallenge-DogCeoChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D961E64253F87F9820693784 /* Pods-DogCeoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallenge.release.xcconfig"; path = "Target Support Files/Pods-DogCeoChallenge/Pods-DogCeoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD76DFC4B0AF6000CE16D432 /* libPods-DogCeoChallenge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D48A96D21D91C67FC5AF773 /* libPods-DogCeoChallengeTests.a in Frameworks */,
+				0AFD0F3B5EBECC0F41A5D7DE /* libPods-DogCeoChallenge-DogCeoChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +308,10 @@
 			children = (
 				0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */,
 				9D457D370698F0DFFCB8ED80 /* Pods-DogCeoChallengeTests.release.xcconfig */,
+				86CB9C58ABFCD0D05107CFA1 /* Pods-DogCeoChallenge.debug.xcconfig */,
+				D961E64253F87F9820693784 /* Pods-DogCeoChallenge.release.xcconfig */,
+				35D8AE0C977A75BBA5847D25 /* Pods-DogCeoChallenge-DogCeoChallengeTests.debug.xcconfig */,
+				210A13286CD9D4D16F070020 /* Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -308,7 +319,8 @@
 		E89DEE6CDE7B2947D1FD27AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6D48FEA5984DA64C36F74E1 /* libPods-DogCeoChallengeTests.a */,
+				8BADAF6BA4BFA35A32D0C9D6 /* libPods-DogCeoChallenge.a */,
+				C32FA6B6140FC4BC3F98CAD4 /* libPods-DogCeoChallenge-DogCeoChallengeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,6 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0404AEF72810B39700E03460 /* Build configuration list for PBXNativeTarget "DogCeoChallenge" */;
 			buildPhases = (
+				23C5C538B5A70F599A9994C3 /* [CP] Check Pods Manifest.lock */,
 				0404AEDF2810B39600E03460 /* Sources */,
 				0404AEE02810B39600E03460 /* Frameworks */,
 				0404AEE12810B39600E03460 /* Resources */,
@@ -410,6 +423,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23C5C538B5A70F599A9994C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogCeoChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6BD0048533C4B92F345D45D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,7 +460,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DogCeoChallengeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DogCeoChallenge-DogCeoChallengeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -616,6 +651,7 @@
 		};
 		0404AEF82810B39700E03460 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CB9C58ABFCD0D05107CFA1 /* Pods-DogCeoChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -645,6 +681,7 @@
 		};
 		0404AEF92810B39700E03460 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D961E64253F87F9820693784 /* Pods-DogCeoChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -674,7 +711,7 @@
 		};
 		044CFB642820115100DD9470 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */;
+			baseConfigurationReference = 35D8AE0C977A75BBA5847D25 /* Pods-DogCeoChallenge-DogCeoChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -693,7 +730,7 @@
 		};
 		044CFB652820115100DD9470 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D457D370698F0DFFCB8ED80 /* Pods-DogCeoChallengeTests.release.xcconfig */;
+			baseConfigurationReference = 210A13286CD9D4D16F070020 /* Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

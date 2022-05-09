@@ -1,4 +1,7 @@
 platform :ios, '15.2'
-target 'DogCeoChallengeTests' do
-    pod 'Mimic'
-end 
+target 'DogCeoChallenge' do
+    pod 'Alamofire'
+    target 'DogCeoChallengeTests' do
+        pod 'Mimic'
+    end
+end

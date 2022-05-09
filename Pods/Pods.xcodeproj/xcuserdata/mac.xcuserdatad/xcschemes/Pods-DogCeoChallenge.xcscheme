@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D58A5F8366021012938C9C6E0EA7F2BA"
-               BuildableName = "libPods-DogCeoChallengeTests.a"
-               BlueprintName = "Pods-DogCeoChallengeTests"
+               BlueprintIdentifier = "828E5D260825A8C0551EF633D411ED5B"
+               BuildableName = "libPods-DogCeoChallenge.a"
+               BlueprintName = "Pods-DogCeoChallenge"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

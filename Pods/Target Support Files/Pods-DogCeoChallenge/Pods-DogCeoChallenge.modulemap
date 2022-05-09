@@ -1,0 +1,6 @@
+module Pods_DogCeoChallenge {
+  umbrella header "Pods-DogCeoChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
