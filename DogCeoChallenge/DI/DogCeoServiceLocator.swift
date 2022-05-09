@@ -3,7 +3,7 @@ class DogCeoServiceLocator {
     private let breedsListToArrayMapper = BreedsListToArrayMapper()
     private let picturesListToArrayMapper = PicturesListToArrayMapper()
     
-    var repository: DogApiRepository {
+    private var repository: DogApiRepository {
         return DogApiRepository(
             restApi: restApi,
             breedsMapper: breedsListToArrayMapper,
