@@ -2,8 +2,8 @@ import UIKit
 
 class DogsPicturesViewController: UIViewController {
     
-    var viewDataSource = DogPicturesViewDataSource()
-    var viewDelegate = DogPicturesViewDelegate()
+    var viewDataSource: DogPicturesViewDataSource?
+    var viewDelegate: DogPicturesViewDelegate?
     
     let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
@@ -19,8 +19,6 @@ class DogsPicturesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = dogBreed.uppercased()
         
         prepareTableView()
         prepareTableViewDelegates()
@@ -42,13 +40,14 @@ class DogsPicturesViewController: UIViewController {
         view.addSubview(dogsPicturesTable)
         dogsPicturesTable.pin(to: view)
         dogsPicturesTable.register(DogsPicturesTableViewCell.self, forCellReuseIdentifier: "cell")
+        title = dogBreed.uppercased()
     }
     
     private func prepareTableViewDelegates() {
         dogsPicturesTable.dataSource = viewDataSource
-        viewDataSource.view = self
+        viewDataSource?.view = self
         dogsPicturesTable.delegate = viewDelegate
-        viewDelegate.view = self
+        viewDelegate?.view = self
     }
     
 }

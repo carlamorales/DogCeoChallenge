@@ -2,8 +2,8 @@ import UIKit
 
 class BreedsListViewController: UIViewController {
     
-    var viewDataSource = BreedsListViewDataSource()
-    var viewDelegate = BreedsListViewDelegate()
+    var viewDataSource: BreedsListViewDataSource?
+    var viewDelegate: BreedsListViewDelegate?
     
     let breedsListTable = UITableView()
     var breedsArray: [String] = []
@@ -18,8 +18,6 @@ class BreedsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "DOG BREEDS"
         
         prepareTableView()
         prepareTableViewDelegates()
@@ -41,13 +39,14 @@ class BreedsListViewController: UIViewController {
         view.addSubview(breedsListTable)
         breedsListTable.pin(to: view)
         breedsListTable.register(BreedsListTableViewCell.self, forCellReuseIdentifier: "cell")
+        title = "DOG BREEDS"
     }
     
     private func prepareTableViewDelegates() {
         breedsListTable.dataSource = viewDataSource
-        viewDataSource.view = self
+        viewDataSource?.view = self
         breedsListTable.delegate = viewDelegate
-        viewDelegate.view = self
+        viewDelegate?.view = self
     }
     
 }
