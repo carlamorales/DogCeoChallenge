@@ -2,12 +2,21 @@ import UIKit
 
 class DogsPicturesViewController: UIViewController {
     
-    private let dogsPicturesTable = UITableView()
+    var viewDataSource = DogPicturesViewDataSource()
+    var viewDelegate = DogPicturesViewDelegate()
+    
+    let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
     var dogBreed: String = ""
     
     var getPicturesListUseCase: GetPicturesListUseCase?
-
+    
+    convenience init(viewDataSource: DogPicturesViewDataSource, viewDelegate: DogPicturesViewDelegate) {
+        self.init()
+        self.viewDataSource = viewDataSource
+        self.viewDelegate = viewDelegate
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,31 +45,10 @@ class DogsPicturesViewController: UIViewController {
     }
     
     private func prepareTableViewDelegates() {
-        dogsPicturesTable.dataSource = self
-        dogsPicturesTable.delegate = self
+        dogsPicturesTable.dataSource = viewDataSource
+        viewDataSource.view = self
+        dogsPicturesTable.delegate = viewDelegate
+        viewDelegate.view = self
     }
     
-}
-
-extension DogsPicturesViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return picturesArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = dogsPicturesTable.dequeueReusableCell(withIdentifier: "cell") as! DogsPicturesTableViewCell
-        let cellContent = picturesArray[indexPath.row]
-        if let image = nsCache.object(forKey: cellContent as NSString) {
-            cell.dogImageView.image = image
-        } else {
-            cell.dogImageView.downloaded(from: cellContent)
-        }
-        return cell
-    }
-}
-
-extension DogsPicturesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
-    }
 }
