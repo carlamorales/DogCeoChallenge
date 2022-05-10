@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
-        let breedsListViewController = BreedsListViewController()
+        let breedsListViewController = BreedsListViewController(viewDataSource: BreedsListViewDataSource())
         breedsListViewController.getBreedsListUseCase = DogCeoServiceLocator().getBreedsListUseCase
         
         let navigationController = UINavigationController(rootViewController: breedsListViewController)
