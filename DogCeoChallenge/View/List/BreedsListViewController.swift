@@ -10,9 +10,10 @@ class BreedsListViewController: UIViewController {
     
     var getBreedsListUseCase: GetBreedsListUseCase?
     
-    convenience init(viewDataSource: BreedsListViewDataSource) {
+    convenience init(viewDataSource: BreedsListViewDataSource, viewDelegate: BreedsListViewDelegate) {
         self.init()
         self.viewDataSource = viewDataSource
+        self.viewDelegate = viewDelegate
     }
 
     override func viewDidLoad() {
