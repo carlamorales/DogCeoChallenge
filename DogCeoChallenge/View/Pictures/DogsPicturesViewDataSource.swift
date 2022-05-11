@@ -1,10 +1,10 @@
 import UIKit
 
-class DogPicturesViewDataSource: NSObject {
+class DogsPicturesViewDataSource: NSObject {
     weak var view: DogsPicturesViewController?
 }
 
-extension DogPicturesViewDataSource: UITableViewDataSource {
+extension DogsPicturesViewDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return view?.picturesArray.count ?? 0
     }

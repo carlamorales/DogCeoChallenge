@@ -2,8 +2,8 @@ import UIKit
 
 class DogsPicturesViewController: UIViewController {
     
-    var viewDataSource: DogPicturesViewDataSource?
-    var viewDelegate: DogPicturesViewDelegate?
+    var viewDataSource: DogsPicturesViewDataSource?
+    var viewDelegate: DogsPicturesViewDelegate?
     
     let dogsPicturesTable = UITableView()
     var picturesArray: [String] = []
@@ -11,7 +11,7 @@ class DogsPicturesViewController: UIViewController {
     
     var getPicturesListUseCase: GetPicturesListUseCase?
     
-    convenience init(viewDataSource: DogPicturesViewDataSource, viewDelegate: DogPicturesViewDelegate) {
+    convenience init(viewDataSource: DogsPicturesViewDataSource, viewDelegate: DogsPicturesViewDelegate) {
         self.init()
         self.viewDataSource = viewDataSource
         self.viewDelegate = viewDelegate

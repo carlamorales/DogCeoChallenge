@@ -1,10 +1,10 @@
 import UIKit
 
-class DogPicturesViewDelegate: NSObject {
+class DogsPicturesViewDelegate: NSObject {
     weak var view: DogsPicturesViewController?
 }
 
-extension DogPicturesViewDelegate: UITableViewDelegate {
+extension DogsPicturesViewDelegate: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }

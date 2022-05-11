@@ -10,8 +10,8 @@ extension BreedsListViewDelegate: UITableViewDelegate {
             return
         }
         let vcDogsPictures = DogsPicturesViewController(
-            viewDataSource: DogPicturesViewDataSource(),
-            viewDelegate: DogPicturesViewDelegate()
+            viewDataSource: DogsPicturesViewDataSource(),
+            viewDelegate: DogsPicturesViewDelegate()
         )
         let cellContent = view.breedsArray[indexPath.row]
         vcDogsPictures.dogBreed = cellContent.name
