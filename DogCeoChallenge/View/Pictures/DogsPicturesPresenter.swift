@@ -1,7 +1,7 @@
 class DogsPicturesPresenter: DogsPicturesPresenterProtocol {
     
     private let getPicturesListUseCase: GetPicturesListUseCase
-    weak var view: DogPicturesView?
+    weak var view: DogsPicturesView?
     
     init(getPicturesListUseCase: GetPicturesListUseCase) {
         self.getPicturesListUseCase = getPicturesListUseCase

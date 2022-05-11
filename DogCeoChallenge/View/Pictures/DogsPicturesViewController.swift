@@ -46,7 +46,7 @@ class DogsPicturesViewController: UIViewController {
     
 }
 
-extension DogsPicturesViewController: DogPicturesView {
+extension DogsPicturesViewController: DogsPicturesView {
     func displayList(_ list: [PicturesViewModel]) {
         picturesArray = list
         dogsPicturesTable.reloadData()
