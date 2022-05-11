@@ -1,0 +1,3 @@
+protocol BreedsListPresenterProtocol {
+    func getBreedsList()
+}

@@ -2,18 +2,22 @@ import UIKit
 
 class BreedsListViewController: UIViewController {
     
-    var viewDataSource: BreedsListViewDataSource?
-    var viewDelegate: BreedsListViewDelegate?
+    private var viewDataSource: BreedsListViewDataSource?
+    private var viewDelegate: BreedsListViewDelegate?
+    private var presenter: BreedsListPresenterProtocol?
     
     let breedsListTable = UITableView()
-    var breedsArray: [String] = []
+    var breedsArray: [BreedsViewModel] = []
     
-    var getBreedsListUseCase: GetBreedsListUseCase?
-    
-    convenience init(viewDataSource: BreedsListViewDataSource, viewDelegate: BreedsListViewDelegate) {
+    convenience init(
+        viewDataSource: BreedsListViewDataSource,
+        viewDelegate: BreedsListViewDelegate,
+        presenter: BreedsListPresenterProtocol
+    ) {
         self.init()
         self.viewDataSource = viewDataSource
         self.viewDelegate = viewDelegate
+        self.presenter = presenter
     }
 
     override func viewDidLoad() {
@@ -21,17 +25,7 @@ class BreedsListViewController: UIViewController {
         
         prepareTableView()
         prepareTableViewDelegates()
-        
-        getBreedsListUseCase?.execute(onCompletion: { breeds, error in
-            DispatchQueue.main.async {
-                guard let breeds = breeds else {
-                    print(error?.description ?? "Error")
-                    return
-                }
-                self.breedsArray = breeds.message
-                self.breedsListTable.reloadData()
-            }
-        })
+        presenter?.getBreedsList()
         
     }
     
@@ -49,4 +43,16 @@ class BreedsListViewController: UIViewController {
         viewDelegate?.view = self
     }
     
+}
+
+
+extension BreedsListViewController: BreedsListView {
+    func displayList(_ list: [BreedsViewModel]) {
+        breedsArray = list
+        breedsListTable.reloadData()
+    }
+    
+    func displayError() {
+        print("Error")
+    }
 }

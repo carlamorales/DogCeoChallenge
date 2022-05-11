@@ -11,8 +11,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
-        let breedsListViewController = BreedsListViewController(viewDataSource: BreedsListViewDataSource(), viewDelegate: BreedsListViewDelegate())
-        breedsListViewController.getBreedsListUseCase = DogCeoServiceLocator().getBreedsListUseCase
+        let presenter = BreedsListPresenter(
+            getBreedsListUseCase: DogCeoServiceLocator().getBreedsListUseCase
+        )
+        
+        let breedsListViewController = BreedsListViewController(
+            viewDataSource: BreedsListViewDataSource(),
+            viewDelegate: BreedsListViewDelegate(),
+            presenter: presenter
+        )
+        
+        presenter.view = breedsListViewController
         
         let navigationController = UINavigationController(rootViewController: breedsListViewController)
         window?.rootViewController = navigationController

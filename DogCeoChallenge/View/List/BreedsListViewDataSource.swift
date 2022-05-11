@@ -15,7 +15,7 @@ extension BreedsListViewDataSource: UITableViewDataSource {
         }
         let cell = view.breedsListTable.dequeueReusableCell(withIdentifier: "cell") as! BreedsListTableViewCell
         let cellContent = view.breedsArray[indexPath.row]
-        cell.breedLabel.text = cellContent
+        cell.breedLabel.text = cellContent.name
         return cell
     }
 }
