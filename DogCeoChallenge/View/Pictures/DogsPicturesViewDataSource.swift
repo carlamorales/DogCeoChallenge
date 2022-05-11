@@ -15,10 +15,10 @@ extension DogsPicturesViewDataSource: UITableViewDataSource {
         }
         let cell = view.dogsPicturesTable.dequeueReusableCell(withIdentifier: "cell") as! DogsPicturesTableViewCell
         let cellContent = view.picturesArray[indexPath.row]
-        if let image = nsCache.object(forKey: cellContent as NSString) {
+        if let image = nsCache.object(forKey: cellContent.name as NSString) {
             cell.dogImageView.image = image
         } else {
-            cell.dogImageView.downloaded(from: cellContent)
+            cell.dogImageView.downloaded(from: cellContent.name)
         }
         return cell
     }

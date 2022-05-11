@@ -9,16 +9,17 @@ extension BreedsListViewDelegate: UITableViewDelegate {
         guard let view = view else {
             return
         }
+        let presenter = DogsPicturesPresenter(
+            getPicturesListUseCase: DogCeoServiceLocator().getPicturesListUseCase
+        )
         let vcDogsPictures = DogsPicturesViewController(
             viewDataSource: DogsPicturesViewDataSource(),
-            viewDelegate: DogsPicturesViewDelegate()
+            viewDelegate: DogsPicturesViewDelegate(),
+            presenter: presenter
         )
         let cellContent = view.breedsArray[indexPath.row]
         vcDogsPictures.dogBreed = cellContent.name
-        
-        let getPicturesListUseCase = DogCeoServiceLocator().getPicturesListUseCase
-        vcDogsPictures.getPicturesListUseCase = getPicturesListUseCase
-        
+        presenter.view = vcDogsPictures
         view.navigationController?.pushViewController(vcDogsPictures, animated: true)
     }
     

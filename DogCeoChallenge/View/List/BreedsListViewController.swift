@@ -26,7 +26,6 @@ class BreedsListViewController: UIViewController {
         prepareTableView()
         prepareTableViewDelegates()
         presenter?.getBreedsList()
-        
     }
     
     private func prepareTableView() {
@@ -44,7 +43,6 @@ class BreedsListViewController: UIViewController {
     }
     
 }
-
 
 extension BreedsListViewController: BreedsListView {
     func displayList(_ list: [BreedsViewModel]) {

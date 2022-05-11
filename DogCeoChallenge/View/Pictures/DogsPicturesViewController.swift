@@ -2,19 +2,23 @@ import UIKit
 
 class DogsPicturesViewController: UIViewController {
     
-    var viewDataSource: DogsPicturesViewDataSource?
-    var viewDelegate: DogsPicturesViewDelegate?
+    private var viewDataSource: DogsPicturesViewDataSource?
+    private var viewDelegate: DogsPicturesViewDelegate?
+    private var presenter: DogsPicturesPresenterProtocol?
     
     let dogsPicturesTable = UITableView()
-    var picturesArray: [String] = []
+    var picturesArray: [PicturesViewModel] = []
     var dogBreed: String = ""
     
-    var getPicturesListUseCase: GetPicturesListUseCase?
-    
-    convenience init(viewDataSource: DogsPicturesViewDataSource, viewDelegate: DogsPicturesViewDelegate) {
+    convenience init(
+        viewDataSource: DogsPicturesViewDataSource,
+        viewDelegate: DogsPicturesViewDelegate,
+        presenter: DogsPicturesPresenterProtocol
+    ) {
         self.init()
         self.viewDataSource = viewDataSource
         self.viewDelegate = viewDelegate
+        self.presenter = presenter
     }
     
     override func viewDidLoad() {
@@ -22,17 +26,7 @@ class DogsPicturesViewController: UIViewController {
         
         prepareTableView()
         prepareTableViewDelegates()
-        
-        getPicturesListUseCase?.execute(breed: dogBreed, onCompletion: { pictures, error in
-            DispatchQueue.main.async {
-                guard let pictures = pictures else {
-                    print(error?.description ?? "Error")
-                    return
-                }
-                self.picturesArray = pictures.message
-                self.dogsPicturesTable.reloadData()
-            }
-        })
+        presenter?.getPicturesList(breed: dogBreed)
         
     }
     
@@ -50,4 +44,15 @@ class DogsPicturesViewController: UIViewController {
         viewDelegate?.view = self
     }
     
+}
+
+extension DogsPicturesViewController: DogPicturesView {
+    func displayList(_ list: [PicturesViewModel]) {
+        picturesArray = list
+        dogsPicturesTable.reloadData()
+    }
+    
+    func displayError() {
+        print("Error")
+    }
 }
