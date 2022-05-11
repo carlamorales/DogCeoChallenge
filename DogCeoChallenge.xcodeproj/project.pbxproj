@@ -51,6 +51,7 @@
 		04A97E3A282968F900D22BB8 /* AlamofireApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */; };
 		04A97E3C2829757A00D22BB8 /* AlamofireApiCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97E3B2829757A00D22BB8 /* AlamofireApiCallTests.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
+		04EE6D78282C682900D7A77E /* BreedsListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EE6D77282C682900D7A77E /* BreedsListViewControllerFactory.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
 		0AFD0F3B5EBECC0F41A5D7DE /* libPods-DogCeoChallenge-DogCeoChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FA6B6140FC4BC3F98CAD4 /* libPods-DogCeoChallenge-DogCeoChallengeTests.a */; };
 		CD76DFC4B0AF6000CE16D432 /* libPods-DogCeoChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BADAF6BA4BFA35A32D0C9D6 /* libPods-DogCeoChallenge.a */; };
@@ -114,6 +115,7 @@
 		04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiCall.swift; sourceTree = "<group>"; };
 		04A97E3B2829757A00D22BB8 /* AlamofireApiCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiCallTests.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		04EE6D77282C682900D7A77E /* BreedsListViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewControllerFactory.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
 		0D525ED55265639A0807BEAA /* Pods-DogCeoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DogCeoChallengeTests/Pods-DogCeoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		210A13286CD9D4D16F070020 /* Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-DogCeoChallenge-DogCeoChallengeTests/Pods-DogCeoChallenge-DogCeoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		0404AEE52810B39600E03460 /* DogCeoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				04EE6D76282C67FC00D7A77E /* Factory */,
 				04744F072825C7F6007E427E /* DI */,
 				044CD196281831A800FBA241 /* Domain */,
 				044CD197281831BF00FBA241 /* Data */,
@@ -366,6 +369,14 @@
 				04A157CF282470CA00C88C0A /* PicturesListToArrayMapperTests.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		04EE6D76282C67FC00D7A77E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				04EE6D77282C682900D7A77E /* BreedsListViewControllerFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		04F7A6BA28221C19002A5698 /* Network */ = {
@@ -579,6 +590,7 @@
 				044CD1A32818357F00FBA241 /* DogRepository.swift in Sources */,
 				0482D82A282B565E00CF6ECA /* DogsPicturesPresenter.swift in Sources */,
 				049AEAB1282B1D7100FE5A40 /* BreedsListPresenter.swift in Sources */,
+				04EE6D78282C682900D7A77E /* BreedsListViewControllerFactory.swift in Sources */,
 				041FC7C42814597B008AF4DA /* BreedsListTableViewCell.swift in Sources */,
 				0404B3DB282AB50800755811 /* BreedsListViewDelegate.swift in Sources */,
 				04310F712821751600BEDAB8 /* GetBreedsListUseCase.swift in Sources */,
