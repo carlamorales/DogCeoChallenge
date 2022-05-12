@@ -34,6 +34,8 @@
 		0454C9CB282CA1FC008D5CD0 /* BreedsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454C9CA282CA1FC008D5CD0 /* BreedsListPresenterTests.swift */; };
 		045610CF282AE3B700D2DB6F /* DogsPicturesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610CE282AE3B700D2DB6F /* DogsPicturesViewDataSource.swift */; };
 		045610D1282AE57600D2DB6F /* DogsPicturesViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610D0282AE57600D2DB6F /* DogsPicturesViewDelegate.swift */; };
+		0472118D282D9B9500C9EDF5 /* BreedsViewModelToBreedsListMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472118C282D9B9500C9EDF5 /* BreedsViewModelToBreedsListMapperTests.swift */; };
+		0472118F282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472118E282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift */; };
 		04744F092825C842007E427E /* DogCeoServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04744F082825C842007E427E /* DogCeoServiceLocator.swift */; };
 		047860C5281195D10040E2ED /* DogsPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047860C4281195D10040E2ED /* DogsPicturesViewController.swift */; };
 		0482D82A282B565E00CF6ECA /* DogsPicturesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482D829282B565E00CF6ECA /* DogsPicturesPresenter.swift */; };
@@ -104,6 +106,8 @@
 		0454C9CA282CA1FC008D5CD0 /* BreedsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListPresenterTests.swift; sourceTree = "<group>"; };
 		045610CE282AE3B700D2DB6F /* DogsPicturesViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewDataSource.swift; sourceTree = "<group>"; };
 		045610D0282AE57600D2DB6F /* DogsPicturesViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewDelegate.swift; sourceTree = "<group>"; };
+		0472118C282D9B9500C9EDF5 /* BreedsViewModelToBreedsListMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModelToBreedsListMapperTests.swift; sourceTree = "<group>"; };
+		0472118E282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewModelToPicturesListMapperTests.swift; sourceTree = "<group>"; };
 		04744F082825C842007E427E /* DogCeoServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCeoServiceLocator.swift; sourceTree = "<group>"; };
 		047860C4281195D10040E2ED /* DogsPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewController.swift; sourceTree = "<group>"; };
 		0482D829282B565E00CF6ECA /* DogsPicturesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesPresenter.swift; sourceTree = "<group>"; };
@@ -408,6 +412,8 @@
 			children = (
 				04A157CD282470AB00C88C0A /* BreedsListToArrayMapperTests.swift */,
 				04A157CF282470CA00C88C0A /* PicturesListToArrayMapperTests.swift */,
+				0472118C282D9B9500C9EDF5 /* BreedsViewModelToBreedsListMapperTests.swift */,
+				0472118E282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -650,9 +656,11 @@
 				048C78A12822FF4700305CC7 /* ApiRestMock.swift in Sources */,
 				04A157CB28244EA000C88C0A /* GetPicturesListUseCaseTests.swift in Sources */,
 				04A157CE282470AB00C88C0A /* BreedsListToArrayMapperTests.swift in Sources */,
+				0472118F282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift in Sources */,
 				04A157C9282449E600C88C0A /* GetBreedsListUseCaseTests.swift in Sources */,
 				0454C9CB282CA1FC008D5CD0 /* BreedsListPresenterTests.swift in Sources */,
 				0454C9C7282CA1A5008D5CD0 /* BreedsListViewDataSourceTests.swift in Sources */,
+				0472118D282D9B9500C9EDF5 /* BreedsViewModelToBreedsListMapperTests.swift in Sources */,
 				04A157D0282470CA00C88C0A /* PicturesListToArrayMapperTests.swift in Sources */,
 				044CFB612820115100DD9470 /* APICallTests.swift in Sources */,
 				04A97E3C2829757A00D22BB8 /* AlamofireApiCallTests.swift in Sources */,
