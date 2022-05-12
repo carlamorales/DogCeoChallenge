@@ -16,6 +16,7 @@
 		0404B3DB282AB50800755811 /* BreedsListViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404B3DA282AB50800755811 /* BreedsListViewDelegate.swift */; };
 		04092423281B2B2700A82440 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04092422281B2B2700A82440 /* Mapper.swift */; };
 		040CD88D2810EE5A00B57F12 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD88C2810EE5A00B57F12 /* APICall.swift */; };
+		040E5412282DB8E900E28488 /* BreedsListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E5411282DB8E900E28488 /* BreedsListViewMock.swift */; };
 		041FC7C42814597B008AF4DA /* BreedsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */; };
 		041FC7C628146381008AF4DA /* DogsPicturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */; };
 		042817AE2821DDEE0018B5D9 /* BreedsListToArrayMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042817AD2821DDEE0018B5D9 /* BreedsListToArrayMapper.swift */; };
@@ -87,6 +88,7 @@
 		0404B3DA282AB50800755811 /* BreedsListViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewDelegate.swift; sourceTree = "<group>"; };
 		04092422281B2B2700A82440 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		040CD88C2810EE5A00B57F12 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		040E5411282DB8E900E28488 /* BreedsListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewMock.swift; sourceTree = "<group>"; };
 		041FC7C32814597B008AF4DA /* BreedsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListTableViewCell.swift; sourceTree = "<group>"; };
 		041FC7C528146381008AF4DA /* DogsPicturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesTableViewCell.swift; sourceTree = "<group>"; };
 		042817AD2821DDEE0018B5D9 /* BreedsListToArrayMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListToArrayMapper.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			children = (
 				048C78A02822FF4700305CC7 /* ApiRestMock.swift */,
 				04A157C52824273500C88C0A /* DogRepositoryMock.swift */,
+				040E5411282DB8E900E28488 /* BreedsListViewMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				04A157CE282470AB00C88C0A /* BreedsListToArrayMapperTests.swift in Sources */,
 				0472118F282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift in Sources */,
 				04A157C9282449E600C88C0A /* GetBreedsListUseCaseTests.swift in Sources */,
+				040E5412282DB8E900E28488 /* BreedsListViewMock.swift in Sources */,
 				0454C9CB282CA1FC008D5CD0 /* BreedsListPresenterTests.swift in Sources */,
 				0454C9C7282CA1A5008D5CD0 /* BreedsListViewDataSourceTests.swift in Sources */,
 				0472118D282D9B9500C9EDF5 /* BreedsViewModelToBreedsListMapperTests.swift in Sources */,
