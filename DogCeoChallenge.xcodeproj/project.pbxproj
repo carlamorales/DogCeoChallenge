@@ -58,6 +58,10 @@
 		04A97E3A282968F900D22BB8 /* AlamofireApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */; };
 		04A97E3C2829757A00D22BB8 /* AlamofireApiCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97E3B2829757A00D22BB8 /* AlamofireApiCallTests.swift */; };
 		04CD46B428136715009DEC45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD46B328136715009DEC45 /* UIImageViewExtension.swift */; };
+		04E6297D282DEFED0099F57C /* DogsPicturesViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6297C282DEFED0099F57C /* DogsPicturesViewDataSourceTests.swift */; };
+		04E6297F282DF00E0099F57C /* DogsPicturesViewDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6297E282DF00E0099F57C /* DogsPicturesViewDelegateTests.swift */; };
+		04E62981282DF02E0099F57C /* DogsPicturesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E62980282DF02E0099F57C /* DogsPicturesPresenterTests.swift */; };
+		04E62983282DF1350099F57C /* DogsPicturesViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E62982282DF1350099F57C /* DogsPicturesViewMock.swift */; };
 		04EE6D78282C682900D7A77E /* BreedsListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EE6D77282C682900D7A77E /* BreedsListViewControllerFactory.swift */; };
 		04FB430D2816D7C400E74740 /* ApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB430C2816D7C400E74740 /* ApiRest.swift */; };
 		04FFE6B1282D4AE20038318B /* BreedsViewModelToBreedsListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE6B0282D4AE20038318B /* BreedsViewModelToBreedsListMapper.swift */; };
@@ -131,6 +135,10 @@
 		04A97E39282968F900D22BB8 /* AlamofireApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiCall.swift; sourceTree = "<group>"; };
 		04A97E3B2829757A00D22BB8 /* AlamofireApiCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiCallTests.swift; sourceTree = "<group>"; };
 		04CD46B328136715009DEC45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		04E6297C282DEFED0099F57C /* DogsPicturesViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewDataSourceTests.swift; sourceTree = "<group>"; };
+		04E6297E282DF00E0099F57C /* DogsPicturesViewDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewDelegateTests.swift; sourceTree = "<group>"; };
+		04E62980282DF02E0099F57C /* DogsPicturesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesPresenterTests.swift; sourceTree = "<group>"; };
+		04E62982282DF1350099F57C /* DogsPicturesViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPicturesViewMock.swift; sourceTree = "<group>"; };
 		04EE6D77282C682900D7A77E /* BreedsListViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewControllerFactory.swift; sourceTree = "<group>"; };
 		04FB430C2816D7C400E74740 /* ApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRest.swift; sourceTree = "<group>"; };
 		04FFE6B0282D4AE20038318B /* BreedsViewModelToBreedsListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModelToBreedsListMapper.swift; sourceTree = "<group>"; };
@@ -328,6 +336,9 @@
 		0454C9C5282CA101008D5CD0 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				04E6297C282DEFED0099F57C /* DogsPicturesViewDataSourceTests.swift */,
+				04E6297E282DF00E0099F57C /* DogsPicturesViewDelegateTests.swift */,
+				04E62980282DF02E0099F57C /* DogsPicturesPresenterTests.swift */,
 			);
 			path = Pictures;
 			sourceTree = "<group>";
@@ -388,6 +399,7 @@
 				048C78A02822FF4700305CC7 /* ApiRestMock.swift */,
 				04A157C52824273500C88C0A /* DogRepositoryMock.swift */,
 				040E5411282DB8E900E28488 /* BreedsListViewMock.swift */,
+				04E62982282DF1350099F57C /* DogsPicturesViewMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -660,6 +672,9 @@
 				04A157CB28244EA000C88C0A /* GetPicturesListUseCaseTests.swift in Sources */,
 				04A157CE282470AB00C88C0A /* BreedsListToArrayMapperTests.swift in Sources */,
 				0472118F282DB6DB00C9EDF5 /* PicturesViewModelToPicturesListMapperTests.swift in Sources */,
+				04E6297D282DEFED0099F57C /* DogsPicturesViewDataSourceTests.swift in Sources */,
+				04E62983282DF1350099F57C /* DogsPicturesViewMock.swift in Sources */,
+				04E6297F282DF00E0099F57C /* DogsPicturesViewDelegateTests.swift in Sources */,
 				04A157C9282449E600C88C0A /* GetBreedsListUseCaseTests.swift in Sources */,
 				040E5412282DB8E900E28488 /* BreedsListViewMock.swift in Sources */,
 				0454C9CB282CA1FC008D5CD0 /* BreedsListPresenterTests.swift in Sources */,
@@ -669,6 +684,7 @@
 				044CFB612820115100DD9470 /* APICallTests.swift in Sources */,
 				04A97E3C2829757A00D22BB8 /* AlamofireApiCallTests.swift in Sources */,
 				04A157C62824273500C88C0A /* DogRepositoryMock.swift in Sources */,
+				04E62981282DF02E0099F57C /* DogsPicturesPresenterTests.swift in Sources */,
 				048C789E2822E42C00305CC7 /* DogApiRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

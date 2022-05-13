@@ -5,10 +5,6 @@ class BreedsListPresenterTests: XCTestCase {
     var sut: BreedsListPresenter!
     var breedsListView: BreedsListViewMock!
     var dogRepository: DogRepositoryMock!
-    /*
-    var getBreedsListUseCase: GetBreedsListUseCase!
-    var breedsMapper: BreedsViewModelToBreedsListMapper!
-    */
      
     override func setUp() {
         super.setUp()
