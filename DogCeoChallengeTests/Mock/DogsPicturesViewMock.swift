@@ -8,9 +8,9 @@ class DogsPicturesViewMock: DogsPicturesView {
     var displayListCalled = false
     var displayErrorCalled = false
     
-    init(picturesArray: [PicturesViewModel], dogsPicturesTable: UITableView) {
-        self.picturesArray = picturesArray
+    init(dogsPicturesTable: UITableView, picturesArray: [PicturesViewModel]) {
         self.dogsPicturesTable = dogsPicturesTable
+        self.picturesArray = picturesArray
     }
     
     func displayList(_ list: [PicturesViewModel]) {

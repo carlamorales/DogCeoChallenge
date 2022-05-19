@@ -9,7 +9,7 @@ class DogsPicturesPresenterTests: XCTestCase {
     override func setUp() {
         super.setUp()
         let picturesArray = [PicturesViewModel(name: "asdf")]
-        dogsPicturesView = DogsPicturesViewMock(picturesArray: picturesArray, dogsPicturesTable: UITableView())
+        dogsPicturesView = DogsPicturesViewMock(dogsPicturesTable: UITableView(), picturesArray: picturesArray)
         dogRepository = DogRepositoryMock()
         let getPicturesListUseCase = GetPicturesListUseCase(dogRepository: dogRepository)
         let picturesMapper = PicturesViewModelToPicturesListMapper()

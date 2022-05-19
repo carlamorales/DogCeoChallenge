@@ -10,7 +10,7 @@ class BreedsListViewDelegateTests: XCTestCase {
         super.setUp()
         sut = BreedsListViewDelegate()
         let breedsArray = [BreedsViewModel(name: "asdf")]
-        breedsListView = BreedsListViewMock(breedsArray: breedsArray, breedsListTable: UITableView())
+        breedsListView = BreedsListViewMock(breedsListTable: UITableView(), breedsArray: breedsArray)
         let serviceLocator = DogCeoServiceLocator()
         let presenter = BreedsListPresenter(getBreedsListUseCase: serviceLocator.getBreedsListUseCase, breedsMapper: serviceLocator.getBreedsViewModelToBreedsListMapper)
         viewController = BreedsListViewControllerMock(viewDataSource: BreedsListViewDataSource(), viewDelegate: sut, presenter: presenter)

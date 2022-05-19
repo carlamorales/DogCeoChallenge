@@ -2,16 +2,16 @@ import UIKit
 @testable import DogCeoChallenge
 
 class BreedsListViewMock: BreedsListView {
-    var breedsArray: [BreedsViewModel]
     var breedsListTable: UITableView
+    var breedsArray: [BreedsViewModel]
     
     var displayListCalled = false
     var displayErrorCalled = false
     var showNextViewControllerCalled = false
     
-    init(breedsArray: [BreedsViewModel], breedsListTable: UITableView) {
-        self.breedsArray = breedsArray
+    init(breedsListTable: UITableView, breedsArray: [BreedsViewModel]) {
         self.breedsListTable = breedsListTable
+        self.breedsArray = breedsArray
     }
     
     func displayList(_ list: [BreedsViewModel]) {
