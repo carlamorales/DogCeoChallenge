@@ -53,4 +53,10 @@ extension BreedsListViewController: BreedsListView {
     func displayError() {
         print("Error")
     }
+    
+    func showNextViewController(name: String) {
+        let vcDogsPictures = DogsPicturesViewControllerFactory.makeDogsPicturesViewController()
+        vcDogsPictures.dogBreed = name
+        self.navigationController?.pushViewController(vcDogsPictures, animated: true)
+    }
 }

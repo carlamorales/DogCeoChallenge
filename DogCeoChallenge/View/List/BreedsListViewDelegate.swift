@@ -1,7 +1,7 @@
 import UIKit
 
 class BreedsListViewDelegate: NSObject {
-    weak var view: BreedsListViewController?
+    weak var view: BreedsListView?
 }
 
 extension BreedsListViewDelegate: UITableViewDelegate {
@@ -10,9 +10,7 @@ extension BreedsListViewDelegate: UITableViewDelegate {
             return
         }
         let cellContent = view.breedsArray[indexPath.row]
-        let vcDogsPictures = DogsPicturesViewControllerFactory.makeDogsPicturesViewController()
-        vcDogsPictures.dogBreed = cellContent.name
-        view.navigationController?.pushViewController(vcDogsPictures, animated: true)
+        view.showNextViewController(name: cellContent.name)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
