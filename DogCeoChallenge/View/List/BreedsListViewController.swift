@@ -6,7 +6,7 @@ class BreedsListViewController: UIViewController {
     private var viewDelegate: BreedsListViewDelegate?
     private var presenter: BreedsListPresenterProtocol?
     
-    let breedsListTable = UITableView()
+    var breedsListTable = UITableView()
     var breedsArray: [BreedsViewModel] = []
     
     convenience init(

@@ -1,7 +1,7 @@
 import UIKit
 
 class DogsPicturesViewDataSource: NSObject {
-    weak var view: DogsPicturesViewController?
+    weak var view: DogsPicturesView?
 }
 
 extension DogsPicturesViewDataSource: UITableViewDataSource {

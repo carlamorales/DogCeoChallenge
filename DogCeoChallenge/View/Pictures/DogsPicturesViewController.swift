@@ -6,7 +6,7 @@ class DogsPicturesViewController: UIViewController {
     private var viewDelegate: DogsPicturesViewDelegate?
     private var presenter: DogsPicturesPresenterProtocol?
     
-    let dogsPicturesTable = UITableView()
+    var dogsPicturesTable = UITableView()
     var picturesArray: [PicturesViewModel] = []
     var dogBreed: String = ""
     

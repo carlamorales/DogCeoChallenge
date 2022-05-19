@@ -9,7 +9,7 @@ class BreedsListPresenterTests: XCTestCase {
     override func setUp() {
         super.setUp()
         let breedsArray = [BreedsViewModel(name: "asdf")]
-        breedsListView = BreedsListViewMock(breedsArray: breedsArray)
+        breedsListView = BreedsListViewMock(breedsArray: breedsArray, breedsListTable: UITableView())
         dogRepository = DogRepositoryMock()
         let getBreedsListUseCase = GetBreedsListUseCase(dogRepository: dogRepository)
         let breedsMapper = BreedsViewModelToBreedsListMapper()

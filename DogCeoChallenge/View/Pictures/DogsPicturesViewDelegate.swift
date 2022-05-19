@@ -1,7 +1,7 @@
 import UIKit
 
 class DogsPicturesViewDelegate: NSObject {
-    weak var view: DogsPicturesViewController?
+    weak var view: DogsPicturesView?
 }
 
 extension DogsPicturesViewDelegate: UITableViewDelegate {
