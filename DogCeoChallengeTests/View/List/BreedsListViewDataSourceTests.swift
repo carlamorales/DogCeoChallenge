@@ -24,13 +24,13 @@ class BreedsListViewDataSourceTests: XCTestCase {
         XCTAssertEqual(rows, 2)
     }
     
-    func testNumberOfRowsInSectionWithNil() {
+    func testNumberOfRowsInSectionWithViewNil() {
         sut.view = nil
         let rows = sut.tableView(UITableView(), numberOfRowsInSection: 0)
         XCTAssertEqual(rows, 0)
     }
     
-    func testCellForRowAt() {
+    func testCellForRowAtIndexPath() {
         viewController.breedsArray = [BreedsViewModel(name: "asdf")]
         let tableView = viewController.view.subviews[0] as! UITableView
         let cell = sut.tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! BreedsListTableViewCell
