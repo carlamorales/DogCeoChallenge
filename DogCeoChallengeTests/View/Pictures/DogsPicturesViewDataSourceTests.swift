@@ -30,18 +30,19 @@ class DogsPicturesViewDataSourceTests: XCTestCase {
         XCTAssertEqual(rows, 0)
     }
     
-    /*
+    
     func testCellForRowAt() {
-        let expectation = expectation(description: "testCellForRowAt")
-        viewController.picturesArray = [PicturesViewModel(name: "https://olondriz.com/wp-content/uploads/2020/04/ambar-perrito-1.jpg")]
+        viewController.picturesArray = [PicturesViewModel(name: "asdf")]
         let tableView = viewController.view.subviews[0] as! UITableView
         let cell = sut.tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! DogsPicturesTableViewCell
-        let image = UIImage(named: "perrito")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 2)
-        XCTAssertEqual(cell.dogImageView.image?.pngData(), image?.pngData())
+        XCTAssertTrue((cell as Any) is DogsPicturesTableViewCell)
     }
-    */
+    
+    func testCellForRow() {
+        let tableView = viewController.view.subviews[0] as! UITableView
+        sut.view = nil
+        let cell = sut.tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0))
+        XCTAssertTrue((cell as Any) is UITableViewCell)
+    }
+    
 }
